@@ -1,0 +1,112 @@
+{
+  "req": {
+    "context": {
+      "action": "init",
+      "bap_id": "dev-automation.ondc.org",
+      "bap_uri": "http://localhost:7123/api-service/ONDC:RET10/1.2.5/buyer",
+      "domain": "ONDC:RET10",
+      "city": "std:011",
+      "country": "IND",
+      "message_id": "e949b26e-5b27-434e-a8d2-26c1fa5ab33c",
+      "timestamp": "2025-06-04T11:33:39.128Z",
+      "transaction_id": "46afa3dd-ebee-4346-ba6c-a03f3a2a060a",
+      "core_version": "1.2.5",
+      "ttl": "PT30S",
+      "bpp_id": "dev-automation.ondc.org",
+      "bpp_uri": "http://localhost:7123/api-service/ONDC:RET10/1.2.5/seller"
+    },
+    "message": {
+      "order": {
+        "provider": {
+          "id": "P1",
+          "locations": [
+            {
+              "id": "L1"
+            }
+          ]
+        },
+        "items": [
+          {
+            "id": "I1",
+            "fulfillment_id": "F32822",
+            "quantity": {
+              "count": 9
+            }
+          },
+          {
+            "id": "I2",
+            "fulfillment_id": "F32822",
+            "quantity": {
+              "count": 9
+            }
+          }
+        ],
+        "billing": {
+          "address": {
+            "name": "Door no. or building name",
+            "building": "New_Building",
+            "locality": "6th Cross Road",
+            "city": "Bengaluru",
+            "state": "Karnataka",
+            "country": "IND",
+            "area_code": "560027"
+          },
+          "phone": "9399788618",
+          "name": "John Doe",
+          "email": "nobody@nomail.com",
+          "created_at": "2025-06-04T11:33:34.128Z",
+          "updated_at": "2025-06-04T11:33:34.128Z"
+        },
+        "fulfillments": [
+          {
+            "id": "F32822",
+            "type": "Buyer-Delivery",
+            "end": {
+              "contact": {
+                "email": "nobody@nomail.com",
+                "phone": "9898989898"
+              },
+              "location": {
+                "gps": "12.1233,12.9992",
+                "address": {
+                  "building": "mock-building",
+                  "city": "mock-city",
+                  "state": "mock-state",
+                  "country": "IND",
+                  "area_code": "110092",
+                  "locality": "mock-locality",
+                  "name": "mock-house-name"
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "res": {
+    "response": {
+      "message": {
+        "ack": {
+          "status": "ACK"
+        }
+      },
+      "context": {
+        "action": "init",
+        "bap_id": "dev-automation.ondc.org",
+        "bap_uri": "http://localhost:7123/api-service/ONDC:RET10/1.2.5/buyer",
+        "domain": "ONDC:RET10",
+        "city": "std:011",
+        "country": "IND",
+        "message_id": "e949b26e-5b27-434e-a8d2-26c1fa5ab33c",
+        "timestamp": "2025-06-04T11:33:39.128Z",
+        "transaction_id": "46afa3dd-ebee-4346-ba6c-a03f3a2a060a",
+        "core_version": "1.2.5",
+        "ttl": "PT30S",
+        "bpp_id": "dev-automation.ondc.org",
+        "bpp_uri": "http://localhost:7123/api-service/ONDC:RET10/1.2.5/seller"
+      }
+    }
+  },
+  "signature": "no-auth"
+}

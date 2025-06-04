@@ -1,0 +1,227 @@
+{
+  "req": {
+    "context": {
+      "action": "on_init",
+      "bap_id": "dev-automation.ondc.org",
+      "bap_uri": "http://localhost:7123/api-service/ONDC:RET10/1.2.5/buyer",
+      "domain": "ONDC:RET10",
+      "city": "std:011",
+      "country": "IND",
+      "message_id": "85a9bc06-6638-4520-9f25-4e459e258cd1",
+      "timestamp": "2025-06-04T11:32:57.849Z",
+      "transaction_id": "1de1def1-bd12-40be-8ade-a0fdcb4390ad",
+      "core_version": "1.2.5",
+      "ttl": "PT30S",
+      "bpp_id": "dev-automation.ondc.org",
+      "bpp_uri": "http://localhost:7123/api-service/ONDC:RET10/1.2.5/seller"
+    },
+    "message": {
+      "order": {
+        "provider": {
+          "id": "P1",
+          "locations": [
+            {
+              "id": "L1"
+            }
+          ]
+        },
+        "items": [
+          {
+            "id": "I2",
+            "fulfillment_id": "F1",
+            "quantity": {
+              "count": 4
+            }
+          },
+          {
+            "id": "I3",
+            "fulfillment_id": "F1",
+            "quantity": {
+              "count": 9
+            }
+          }
+        ],
+        "billing": {
+          "address": {
+            "building": "my building name or house",
+            "city": "Mumbai",
+            "state": "Maharashtra",
+            "country": "IND",
+            "area_code": "400053",
+            "locality": "my street name",
+            "name": "my house or door or floor"
+          },
+          "phone": "9898989898",
+          "name": "ONDC buyer",
+          "email": "nobody@nomail.com",
+          "created_at": "2025-06-04T11:32:51.436Z",
+          "updated_at": "2025-06-04T11:32:51.436Z"
+        },
+        "fulfillments": [
+          {
+            "id": "F1",
+            "type": "Delivery",
+            "end": {
+              "contact": {
+                "email": "nobody@nomail.com",
+                "phone": "9898989898"
+              },
+              "location": {
+                "gps": "12.1233,12.9992",
+                "address": {
+                  "building": "mock-building",
+                  "city": "mock-city",
+                  "state": "mock-state",
+                  "country": "IND",
+                  "area_code": "400053",
+                  "locality": "mock-locality",
+                  "name": "mock-house-name"
+                }
+              }
+            },
+            "tracking": true
+          }
+        ],
+        "quote": {
+          "breakup": [
+            {
+              "@ondc/org/item_id": "I2",
+              "@ondc/org/item_quantity": {
+                "count": 4
+              },
+              "title": "Plain Atta",
+              "@ondc/org/title_type": "item",
+              "price": {
+                "currency": "INR",
+                "value": "1200.00"
+              },
+              "item": {
+                "quantity": {
+                  "available": {
+                    "count": "99"
+                  },
+                  "maximum": {
+                    "count": "99"
+                  }
+                },
+                "price": {
+                  "currency": "INR",
+                  "value": "300.00"
+                }
+              }
+            },
+            {
+              "@ondc/org/item_id": "I3",
+              "@ondc/org/item_quantity": {
+                "count": 9
+              },
+              "title": "Alphanso Mango",
+              "@ondc/org/title_type": "item",
+              "price": {
+                "currency": "INR",
+                "value": "2250.00"
+              },
+              "item": {
+                "quantity": {
+                  "available": {
+                    "count": "99"
+                  },
+                  "maximum": {
+                    "count": "99"
+                  }
+                },
+                "price": {
+                  "currency": "INR",
+                  "value": "250.00"
+                }
+              }
+            },
+            {
+              "@ondc/org/item_id": "F1",
+              "title": "Delivery charges",
+              "@ondc/org/title_type": "delivery",
+              "price": {
+                "currency": "INR",
+                "value": "00.00"
+              }
+            },
+            {
+              "@ondc/org/item_id": "F1",
+              "title": "Convenience Fee",
+              "@ondc/org/title_type": "misc",
+              "price": {
+                "currency": "INR",
+                "value": "00.00"
+              }
+            }
+          ],
+          "price": {
+            "currency": "INR",
+            "value": "3450.00"
+          },
+          "ttl": "P1D"
+        },
+        "payment": {
+          "@ondc/org/buyer_app_finder_fee_type": "percent",
+          "@ondc/org/buyer_app_finder_fee_amount": "3",
+          "@ondc/org/settlement_details": [
+            {
+              "settlement_counterparty": "seller-app",
+              "settlement_phase": "sale-amount",
+              "settlement_type": "neft",
+              "beneficiary_name": "xxxx",
+              "settlement_bank_account_no": "XXXX",
+              "settlement_ifsc_code": "XXXX",
+              "bank_name": "XXXX",
+              "branch_name": "XXXX"
+            }
+          ]
+        },
+        "tags": [
+          {
+            "code": "bpp_terms",
+            "list": [
+              {
+                "code": "np_type",
+                "value": "MSN"
+              },
+              {
+                "code": "tax_number",
+                "value": "00ABCCH7409R1ZZ"
+              },
+              {
+                "code": "provider_tax_number",
+                "value": "ABCDE1234F"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "res": {
+    "response": {
+      "message": {
+        "ack": {
+          "status": "ACK"
+        }
+      },
+      "context": {
+        "action": "on_init",
+        "bap_id": "dev-automation.ondc.org",
+        "bap_uri": "http://localhost:7123/api-service/ONDC:RET10/1.2.5/buyer",
+        "domain": "ONDC:RET10",
+        "city": "std:011",
+        "country": "IND",
+        "message_id": "85a9bc06-6638-4520-9f25-4e459e258cd1",
+        "timestamp": "2025-06-04T11:32:57.849Z",
+        "transaction_id": "1de1def1-bd12-40be-8ade-a0fdcb4390ad",
+        "core_version": "1.2.5",
+        "ttl": "PT30S",
+        "bpp_id": "dev-automation.ondc.org",
+        "bpp_uri": "http://localhost:7123/api-service/ONDC:RET10/1.2.5/seller"
+      }
+    }
+  },
+  "signature": "Signature keyId=\"dev-automation.ondc.org|27baa06d-d91a-486c-85e5-cc621b787f04|ed25519\",algorithm=\"ed25519\",created=\"1749036778\",expires=\"1749040378\",headers=\"(created) (expires) digest\",signature=\"1VpUe/KVhHDkbPGwJYTe+tTw/ZIKGIbrwwQ0RiSAWM5CQCAbI6K9nrSmSHpEAbMo0teG6c3c8uDPPrSYKY4cCg==\""
+}

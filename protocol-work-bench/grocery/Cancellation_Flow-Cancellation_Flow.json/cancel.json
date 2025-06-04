@@ -1,0 +1,48 @@
+{
+  "req": {
+    "context": {
+      "action": "cancel",
+      "bap_id": "dev-automation.ondc.org",
+      "bap_uri": "http://localhost:7123/api-service/ONDC:RET10/1.2.5/buyer",
+      "domain": "ONDC:RET10",
+      "city": "std:011",
+      "country": "IND",
+      "message_id": "1a41acd4-8144-46f2-8f66-12ab44a069cc",
+      "timestamp": "2025-06-04T10:36:28.033Z",
+      "transaction_id": "04ad008a-07df-4c0a-ae2d-7b660a1be452",
+      "core_version": "1.2.5",
+      "ttl": "PT30S",
+      "bpp_id": "dev-automation.ondc.org",
+      "bpp_uri": "http://localhost:7123/api-service/ONDC:RET10/1.2.5/seller"
+    },
+    "message": {
+      "order_id": "972050",
+      "cancellation_reason_id": "001"
+    }
+  },
+  "res": {
+    "response": {
+      "message": {
+        "ack": {
+          "status": "ACK"
+        }
+      },
+      "context": {
+        "action": "cancel",
+        "bap_id": "dev-automation.ondc.org",
+        "bap_uri": "http://localhost:7123/api-service/ONDC:RET10/1.2.5/buyer",
+        "domain": "ONDC:RET10",
+        "city": "std:011",
+        "country": "IND",
+        "message_id": "1a41acd4-8144-46f2-8f66-12ab44a069cc",
+        "timestamp": "2025-06-04T10:36:28.033Z",
+        "transaction_id": "04ad008a-07df-4c0a-ae2d-7b660a1be452",
+        "core_version": "1.2.5",
+        "ttl": "PT30S",
+        "bpp_id": "dev-automation.ondc.org",
+        "bpp_uri": "http://localhost:7123/api-service/ONDC:RET10/1.2.5/seller"
+      }
+    }
+  },
+  "signature": "no-auth"
+}

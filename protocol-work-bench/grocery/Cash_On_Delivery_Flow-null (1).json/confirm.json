@@ -1,0 +1,257 @@
+{
+  "req": {
+    "context": {
+      "action": "confirm",
+      "bap_id": "dev-automation.ondc.org",
+      "bap_uri": "http://localhost:7123/api-service/ONDC:RET10/1.2.5/buyer",
+      "domain": "ONDC:RET10",
+      "city": "std:011",
+      "country": "IND",
+      "message_id": "7b3d6a03-94af-455c-a61d-ecf529da934f",
+      "timestamp": "2025-06-04T11:30:48.753Z",
+      "transaction_id": "54b25d03-d032-48b6-93fb-106a01d72e29",
+      "core_version": "1.2.5",
+      "ttl": "PT30S",
+      "bpp_id": "dev-automation.ondc.org",
+      "bpp_uri": "http://localhost:7123/api-service/ONDC:RET10/1.2.5/seller"
+    },
+    "message": {
+      "order": {
+        "billing": {
+          "name": "Abcde",
+          "address": {
+            "name": "7/6, August Kranti Marg",
+            "building": "Siri Fort Institutional",
+            "locality": "Siri Fort Institutional Area, Siri Fort",
+            "city": "New Delhi",
+            "state": "Delhi",
+            "country": "India",
+            "area_code": "110049"
+          },
+          "tax_number": "29AAACU1901H1ZK",
+          "phone": "9999999999",
+          "email": "abc@gmail.com",
+          "created_at": "2025-06-04T11:30:40.885Z",
+          "updated_at": "2025-06-04T11:30:40.885Z"
+        },
+        "fulfillments": [
+          {
+            "id": "F1",
+            "type": "Delivery",
+            "end": {
+              "contact": {
+                "email": "nobody@nomail.com",
+                "phone": "9898989898"
+              },
+              "person": {
+                "name": "mock-person"
+              },
+              "location": {
+                "gps": "12.1233,12.9992",
+                "address": {
+                  "building": "mock-building",
+                  "city": "mock-city",
+                  "state": "mock-state",
+                  "country": "IND",
+                  "area_code": "110092",
+                  "locality": "mock-locality",
+                  "name": "mock-house-name"
+                }
+              }
+            },
+            "tracking": true,
+            "@ondc/org/category": "Standard Delivery",
+            "@ondc/org/TAT": "P2D"
+          }
+        ],
+        "id": "130916",
+        "items": [
+          {
+            "id": "I1",
+            "fulfillment_id": "F1",
+            "quantity": {
+              "count": 9
+            }
+          },
+          {
+            "id": "I2",
+            "fulfillment_id": "F1",
+            "quantity": {
+              "count": 9
+            }
+          }
+        ],
+        "payment": {
+          "type": "ON-FULFILLMENT",
+          "status": "NOT-PAID",
+          "collected_by": "BPP",
+          "@ondc/org/buyer_app_finder_fee_type": "percent",
+          "@ondc/org/buyer_app_finder_fee_amount": "3",
+          "@ondc/org/settlement_basis": "delivery",
+          "@ondc/org/settlement_window": "P1D",
+          "@ondc/org/withholding_amount": "10.00",
+          "params": {
+            "currency": "INR",
+            "amount": "4500.00"
+          },
+          "@ondc/org/settlement_details": [
+            {
+              "settlement_counterparty": "buyer-app",
+              "settlement_phase": "sale-amount",
+              "settlement_type": "upi",
+              "beneficiary_name": "Xyz",
+              "upi_address": "abc@upi",
+              "settlement_bank_account_no": "12345588548",
+              "settlement_ifsc_code": "sdsd0005685",
+              "bank_name": "ABC",
+              "branch_name": "XYZ"
+            }
+          ]
+        },
+        "provider": {
+          "id": "P1",
+          "locations": [
+            {
+              "id": "L1"
+            }
+          ]
+        },
+        "quote": {
+          "breakup": [
+            {
+              "@ondc/org/item_id": "I1",
+              "@ondc/org/item_quantity": {
+                "count": 9
+              },
+              "title": "Plain Atta",
+              "@ondc/org/title_type": "item",
+              "price": {
+                "currency": "INR",
+                "value": "1800.00"
+              },
+              "item": {
+                "quantity": {
+                  "available": {
+                    "count": "99"
+                  },
+                  "maximum": {
+                    "count": "99"
+                  }
+                },
+                "price": {
+                  "currency": "INR",
+                  "value": "200.00"
+                }
+              }
+            },
+            {
+              "@ondc/org/item_id": "I2",
+              "@ondc/org/item_quantity": {
+                "count": 9
+              },
+              "title": "Plain Atta",
+              "@ondc/org/title_type": "item",
+              "price": {
+                "currency": "INR",
+                "value": "2700.00"
+              },
+              "item": {
+                "quantity": {
+                  "available": {
+                    "count": "99"
+                  },
+                  "maximum": {
+                    "count": "99"
+                  }
+                },
+                "price": {
+                  "currency": "INR",
+                  "value": "300.00"
+                }
+              }
+            },
+            {
+              "@ondc/org/item_id": "F1",
+              "title": "Delivery charges",
+              "@ondc/org/title_type": "delivery",
+              "price": {
+                "currency": "INR",
+                "value": "00.00"
+              }
+            },
+            {
+              "@ondc/org/item_id": "F1",
+              "title": "Convenience Fee",
+              "@ondc/org/title_type": "misc",
+              "price": {
+                "currency": "INR",
+                "value": "00.00"
+              }
+            }
+          ],
+          "price": {
+            "currency": "INR",
+            "value": "4500.00"
+          },
+          "ttl": "P1D"
+        },
+        "tags": [
+          {
+            "code": "bpp_terms",
+            "list": [
+              {
+                "code": "np_type",
+                "value": "MSN"
+              },
+              {
+                "code": "tax_number",
+                "value": "00ABCCH7409R1ZZ"
+              },
+              {
+                "code": "provider_tax_number",
+                "value": "ABCDE1234F"
+              }
+            ]
+          },
+          {
+            "code": "bap_terms",
+            "list": [
+              {
+                "code": "tax_number",
+                "value": "33AAAAA0000A1Z5"
+              }
+            ]
+          }
+        ],
+        "state": "Created",
+        "created_at": "2025-06-04T11:30:48.753Z",
+        "updated_at": "2025-06-04T11:30:48.753Z"
+      }
+    }
+  },
+  "res": {
+    "response": {
+      "message": {
+        "ack": {
+          "status": "ACK"
+        }
+      },
+      "context": {
+        "action": "confirm",
+        "bap_id": "dev-automation.ondc.org",
+        "bap_uri": "http://localhost:7123/api-service/ONDC:RET10/1.2.5/buyer",
+        "domain": "ONDC:RET10",
+        "city": "std:011",
+        "country": "IND",
+        "message_id": "7b3d6a03-94af-455c-a61d-ecf529da934f",
+        "timestamp": "2025-06-04T11:30:48.753Z",
+        "transaction_id": "54b25d03-d032-48b6-93fb-106a01d72e29",
+        "core_version": "1.2.5",
+        "ttl": "PT30S",
+        "bpp_id": "dev-automation.ondc.org",
+        "bpp_uri": "http://localhost:7123/api-service/ONDC:RET10/1.2.5/seller"
+      }
+    }
+  },
+  "signature": "Signature keyId=\"dev-automation.ondc.org|27baa06d-d91a-486c-85e5-cc621b787f04|ed25519\",algorithm=\"ed25519\",created=\"1749036649\",expires=\"1749040249\",headers=\"(created) (expires) digest\",signature=\"9aQ49Q6JCR01mGU82RIf5h5cukzMUkV2rdm0yqdnu+SGnnFp6KQfpUJkZzn1K5BJK/4EPSdu4ajJrCgwFs7XAw==\""
+}

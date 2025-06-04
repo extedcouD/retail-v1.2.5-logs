@@ -1,0 +1,79 @@
+{
+  "req": {
+    "context": {
+      "action": "update",
+      "bap_id": "dev-automation.ondc.org",
+      "bap_uri": "http://localhost:7123/api-service/ONDC:RET10/1.2.5/buyer",
+      "domain": "ONDC:RET10",
+      "city": "std:011",
+      "country": "IND",
+      "message_id": "db384f7b-7edd-496d-9587-f83d7996be07",
+      "timestamp": "2025-06-04T11:34:01.559Z",
+      "transaction_id": "46afa3dd-ebee-4346-ba6c-a03f3a2a060a",
+      "core_version": "1.2.5",
+      "ttl": "PT30S",
+      "bpp_id": "dev-automation.ondc.org",
+      "bpp_uri": "http://localhost:7123/api-service/ONDC:RET10/1.2.5/seller"
+    },
+    "message": {
+      "update_target": "fulfillment",
+      "order": {
+        "id": "290709",
+        "fulfillments": [
+          {
+            "id": "F32822",
+            "tags": [
+              {
+                "code": "update_state",
+                "list": [
+                  {
+                    "code": "state",
+                    "value": "Order-delivered"
+                  }
+                ]
+              },
+              {
+                "code": "update_fulfillment_time",
+                "list": [
+                  {
+                    "code": "state",
+                    "value": "Order-delivered"
+                  },
+                  {
+                    "code": "timestamp",
+                    "value": "2025-06-04T11:34:01.559Z"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "res": {
+    "response": {
+      "message": {
+        "ack": {
+          "status": "ACK"
+        }
+      },
+      "context": {
+        "action": "update",
+        "bap_id": "dev-automation.ondc.org",
+        "bap_uri": "http://localhost:7123/api-service/ONDC:RET10/1.2.5/buyer",
+        "domain": "ONDC:RET10",
+        "city": "std:011",
+        "country": "IND",
+        "message_id": "db384f7b-7edd-496d-9587-f83d7996be07",
+        "timestamp": "2025-06-04T11:34:01.559Z",
+        "transaction_id": "46afa3dd-ebee-4346-ba6c-a03f3a2a060a",
+        "core_version": "1.2.5",
+        "ttl": "PT30S",
+        "bpp_id": "dev-automation.ondc.org",
+        "bpp_uri": "http://localhost:7123/api-service/ONDC:RET10/1.2.5/seller"
+      }
+    }
+  },
+  "signature": "no-auth"
+}

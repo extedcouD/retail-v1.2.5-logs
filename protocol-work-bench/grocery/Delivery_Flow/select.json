@@ -1,0 +1,100 @@
+{
+  "req": {
+    "context": {
+      "action": "select",
+      "bap_id": "dev-automation.ondc.org",
+      "bap_uri": "http://localhost:7123/api-service/ONDC:RET10/1.2.5/buyer",
+      "domain": "ONDC:RET10",
+      "city": "std:011",
+      "country": "IND",
+      "message_id": "f1edb6d2-88fd-45c1-adb7-f3233cda1c03",
+      "timestamp": "2025-06-04T10:20:04.983Z",
+      "transaction_id": "0c80b59c-882c-45d0-8078-cd3d79ed95f3",
+      "core_version": "1.2.5",
+      "ttl": "PT30S",
+      "bpp_id": "dev-automation.ondc.org",
+      "bpp_uri": "http://localhost:7123/api-service/ONDC:RET10/1.2.5/seller"
+    },
+    "message": {
+      "order": {
+        "provider": {
+          "id": "P1",
+          "locations": [
+            {
+              "id": "L1"
+            }
+          ]
+        },
+        "items": [
+          {
+            "id": "I1",
+            "quantity": {
+              "count": 8
+            },
+            "location": "L1"
+          },
+          {
+            "id": "I1",
+            "quantity": {
+              "count": 6
+            },
+            "location": "L1"
+          }
+        ],
+        "fulfillments": [
+          {
+            "end": {
+              "location": {
+                "gps": "12.1233,12.9992",
+                "address": {
+                  "area_code": "110092"
+                }
+              }
+            }
+          }
+        ],
+        "offers": [
+          {
+            "id": "FLAT50",
+            "tags": [
+              {
+                "code": "selection",
+                "list": [
+                  {
+                    "code": "apply",
+                    "value": "yes"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "res": {
+    "response": {
+      "message": {
+        "ack": {
+          "status": "ACK"
+        }
+      },
+      "context": {
+        "action": "select",
+        "bap_id": "dev-automation.ondc.org",
+        "bap_uri": "http://localhost:7123/api-service/ONDC:RET10/1.2.5/buyer",
+        "domain": "ONDC:RET10",
+        "city": "std:011",
+        "country": "IND",
+        "message_id": "f1edb6d2-88fd-45c1-adb7-f3233cda1c03",
+        "timestamp": "2025-06-04T10:20:04.983Z",
+        "transaction_id": "0c80b59c-882c-45d0-8078-cd3d79ed95f3",
+        "core_version": "1.2.5",
+        "ttl": "PT30S",
+        "bpp_id": "dev-automation.ondc.org",
+        "bpp_uri": "http://localhost:7123/api-service/ONDC:RET10/1.2.5/seller"
+      }
+    }
+  },
+  "signature": "no-auth"
+}

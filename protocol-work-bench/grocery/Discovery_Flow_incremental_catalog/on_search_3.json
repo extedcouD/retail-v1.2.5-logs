@@ -1,0 +1,118 @@
+{
+  "req": {
+    "context": {
+      "action": "on_search",
+      "bap_id": "dev-automation.ondc.org",
+      "bap_uri": "http://localhost:7123/api-service/ONDC:RET10/1.2.5/buyer",
+      "domain": "ONDC:RET10",
+      "city": "*",
+      "country": "IND",
+      "message_id": "b8808492-3eaf-4a5e-b378-bad97cb1c223",
+      "timestamp": "2025-06-04T10:19:14.711Z",
+      "transaction_id": "9e1d6b3a-a49c-4a34-a92d-1bb3b013e07c",
+      "core_version": "1.2.5",
+      "ttl": "PT30S",
+      "bpp_id": "dev-automation.ondc.org",
+      "bpp_uri": "http://localhost:7123/api-service/ONDC:RET10/1.2.5/seller"
+    },
+    "message": {
+      "catalog": {
+        "bpp/providers": [
+          {
+            "id": "P1",
+            "items": [
+              {
+                "descriptor": {
+                  "name": "Plain Atta",
+                  "code": "1:XXXXXXXXXXXXX",
+                  "symbol": "https://sellerNP.com/images/i1.png",
+                  "short_desc": "Plain Atta",
+                  "long_desc": "Plain Atta",
+                  "images": [
+                    "https://sellerNP.com/images/i1.png"
+                  ]
+                },
+                "price": {
+                  "currency": "INR",
+                  "value": "100.00",
+                  "maximum_value": "100.00"
+                },
+                "quantity": {
+                  "unitized": {
+                    "measure": {
+                      "unit": "kilogram",
+                      "value": "3"
+                    }
+                  },
+                  "available": {
+                    "count": "99"
+                  },
+                  "maximum": {
+                    "count": "99"
+                  }
+                },
+                "category_id": "Atta, Flours and Sooji",
+                "fulfillment_id": "F1",
+                "location_id": "L1",
+                "@ondc/org/returnable": true,
+                "@ondc/org/cancellable": true,
+                "@ondc/org/return_window": "P7D",
+                "@ondc/org/seller_pickup_return": false,
+                "@ondc/org/time_to_ship": "PT5M",
+                "@ondc/org/available_on_cod": false,
+                "@ondc/org/contact_details_consumer_care": "Ramesh,ramesh@abc.com,18004254444",
+                "@ondc/org/statutory_reqs_packaged_commodities": {
+                  "manufacturer_or_packer_name": "ITC",
+                  "manufacturer_or_packer_address": "ITC Quality Care Cell,P.O Box No.592,Bangalore-560005",
+                  "common_or_generic_name_of_commodity": "Ashirwad Atta",
+                  "month_year_of_manufacture_packing_import": "01/2023"
+                },
+                "time": {
+                  "label": "enable",
+                  "timestamp": "2024-12-23T06:46:02.015Z"
+                },
+                "tags": [
+                  {
+                    "code": "origin",
+                    "list": [
+                      {
+                        "code": "country",
+                        "value": "IND"
+                      }
+                    ]
+                  }
+                ],
+                "id": "I1"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "res": {
+    "response": {
+      "message": {
+        "ack": {
+          "status": "ACK"
+        }
+      },
+      "context": {
+        "action": "on_search",
+        "bap_id": "dev-automation.ondc.org",
+        "bap_uri": "http://localhost:7123/api-service/ONDC:RET10/1.2.5/buyer",
+        "domain": "ONDC:RET10",
+        "city": "*",
+        "country": "IND",
+        "message_id": "b8808492-3eaf-4a5e-b378-bad97cb1c223",
+        "timestamp": "2025-06-04T10:19:14.711Z",
+        "transaction_id": "9e1d6b3a-a49c-4a34-a92d-1bb3b013e07c",
+        "core_version": "1.2.5",
+        "ttl": "PT30S",
+        "bpp_id": "dev-automation.ondc.org",
+        "bpp_uri": "http://localhost:7123/api-service/ONDC:RET10/1.2.5/seller"
+      }
+    }
+  },
+  "signature": "Signature keyId=\"dev-automation.ondc.org|27baa06d-d91a-486c-85e5-cc621b787f04|ed25519\",algorithm=\"ed25519\",created=\"1749032355\",expires=\"1749035955\",headers=\"(created) (expires) digest\",signature=\"JWQbxBiXm9GZhfdLAjXX1E1qCFemY1G1p00mLz/qrD7zY+nRpVCtNuVSvO01oG0it/p+UB4ga1ftVL53ApvPBQ==\""
+}

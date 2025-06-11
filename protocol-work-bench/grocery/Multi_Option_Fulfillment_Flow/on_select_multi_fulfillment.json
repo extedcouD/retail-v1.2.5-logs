@@ -1,0 +1,93 @@
+{
+  "context": {
+    "action": "on_select",
+    "bap_id": "dev-automation.ondc.org",
+    "bap_uri": "https://dev-automation.ondc.org/buyer",
+    "domain": "ONDC:RET10",
+    "city": "std:011",
+    "country": "IND",
+    "message_id": "b5c78c67-6111-4c92-b557-d0232fc3da6d",
+    "timestamp": "2025-06-11T07:15:17.572Z",
+    "transaction_id": "4db25d8c-a40c-4658-b4ee-be81457dbecb",
+    "core_version": "1.2.5",
+    "ttl": "PT30S",
+    "bpp_id": "dev-automation.ondc.org",
+    "bpp_uri": "https://dev-automation.ondc.org/seller"
+  },
+  "message": {
+    "order": {
+      "provider": {
+        "id": "P1",
+        "locations": [
+          {
+            "id": "L1"
+          }
+        ]
+      },
+      "items": [
+        {
+          "id": "I1",
+          "fulfillment_ids": [
+            "F1",
+            "F3"
+          ]
+        },
+        {
+          "id": "I2",
+          "fulfillment_ids": [
+            "F2",
+            "F3"
+          ]
+        },
+        {
+          "id": "I3",
+          "fulfillment_ids": [
+            "F1",
+            "F2"
+          ]
+        }
+      ],
+      "fulfillments": [
+        {
+          "id": "F1",
+          "type": "Delivery",
+          "@ondc/org/provider_name": "LSP or Provider Name",
+          "tracking": true,
+          "@ondc/org/category": "Immediate Delivery",
+          "@ondc/org/TAT": "PT60M",
+          "state": {
+            "descriptor": {
+              "code": "Serviceable"
+            }
+          }
+        },
+        {
+          "id": "F2",
+          "type": "Delivery",
+          "@ondc/org/provider_name": "LSP or Provider Name",
+          "tracking": true,
+          "@ondc/org/category": "Immediate Delivery",
+          "@ondc/org/TAT": "PT2H",
+          "state": {
+            "descriptor": {
+              "code": "Serviceable"
+            }
+          }
+        },
+        {
+          "id": "F3",
+          "type": "Delivery",
+          "@ondc/org/provider_name": "LSP or Provider Name",
+          "tracking": true,
+          "@ondc/org/category": "Immediate Delivery",
+          "@ondc/org/TAT": "P1D",
+          "state": {
+            "descriptor": {
+              "code": "Serviceable"
+            }
+          }
+        }
+      ]
+    }
+  }
+}

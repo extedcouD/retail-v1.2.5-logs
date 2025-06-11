@@ -1,0 +1,506 @@
+{
+  "context": {
+    "action": "on_update",
+    "bap_id": "dev-automation.ondc.org",
+    "bap_uri": "https://dev-automation.ondc.org/buyer",
+    "domain": "ONDC:RET10",
+    "city": "std:011",
+    "country": "IND",
+    "message_id": "de43afb7-f236-4afd-83f4-efb94ae96d4d",
+    "timestamp": "2025-06-11T07:15:17.351Z",
+    "transaction_id": "2231d1fe-eb4e-4de3-85be-14986fef8bb4",
+    "core_version": "1.2.5",
+    "ttl": "PT30S",
+    "bpp_id": "dev-automation.ondc.org",
+    "bpp_uri": "https://dev-automation.ondc.org/seller"
+  },
+  "message": {
+    "order": {
+      "id": "581039",
+      "state": "Completed",
+      "provider": {
+        "id": "P1",
+        "locations": [
+          {
+            "id": "L1"
+          }
+        ]
+      },
+      "items": [
+        {
+          "id": "I1",
+          "fulfillment_id": "F1",
+          "quantity": {
+            "count": 1
+          }
+        },
+        {
+          "id": "I3",
+          "fulfillment_id": "F1",
+          "quantity": {
+            "count": 1
+          }
+        },
+        {
+          "id": "I2",
+          "fulfillment_id": "F1",
+          "quantity": {
+            "count": 1
+          }
+        }
+      ],
+      "billing": {
+        "address": {
+          "building": "my building name or house",
+          "city": "Mumbai",
+          "state": "Maharashtra",
+          "country": "IND",
+          "area_code": "400053",
+          "locality": "my street name",
+          "name": "my house or door or floor"
+        },
+        "phone": "9898989898",
+        "name": "ONDC buyer",
+        "email": "nobody@nomail.com",
+        "created_at": "2025-06-11T07:15:12.315Z",
+        "updated_at": "2025-06-11T07:15:12.315Z"
+      },
+      "quote": {
+        "breakup": [
+          {
+            "@ondc/org/item_id": "I1",
+            "@ondc/org/item_quantity": {
+              "count": 1
+            },
+            "title": "Plain Atta",
+            "@ondc/org/title_type": "item",
+            "price": {
+              "currency": "INR",
+              "value": "200.00"
+            },
+            "item": {
+              "quantity": {
+                "available": {
+                  "count": "99"
+                },
+                "maximum": {
+                  "count": "99"
+                }
+              },
+              "price": {
+                "currency": "INR",
+                "value": "200.00"
+              }
+            }
+          },
+          {
+            "@ondc/org/item_id": "I3",
+            "@ondc/org/item_quantity": {
+              "count": 1
+            },
+            "title": "Alphanso Mango",
+            "@ondc/org/title_type": "item",
+            "price": {
+              "currency": "INR",
+              "value": "250.00"
+            },
+            "item": {
+              "quantity": {
+                "available": {
+                  "count": "99"
+                },
+                "maximum": {
+                  "count": "99"
+                }
+              },
+              "price": {
+                "currency": "INR",
+                "value": "250.00"
+              }
+            }
+          },
+          {
+            "@ondc/org/item_id": "I2",
+            "@ondc/org/item_quantity": {
+              "count": 1
+            },
+            "title": "Plain Atta",
+            "@ondc/org/title_type": "item",
+            "price": {
+              "currency": "INR",
+              "value": "300.00"
+            },
+            "item": {
+              "quantity": {
+                "available": {
+                  "count": "99"
+                },
+                "maximum": {
+                  "count": "99"
+                }
+              },
+              "price": {
+                "currency": "INR",
+                "value": "300.00"
+              }
+            }
+          },
+          {
+            "@ondc/org/item_id": "F1",
+            "title": "Delivery charges",
+            "@ondc/org/title_type": "delivery",
+            "price": {
+              "currency": "INR",
+              "value": "00.00"
+            }
+          },
+          {
+            "@ondc/org/item_id": "F1",
+            "title": "Convenience Fee",
+            "@ondc/org/title_type": "misc",
+            "price": {
+              "currency": "INR",
+              "value": "00.00"
+            }
+          },
+          {
+            "@ondc/org/item_id": "combo1",
+            "title": "Flat discount of ₹75 on combo",
+            "@ondc/org/title_type": "offer",
+            "price": {
+              "currency": "INR",
+              "value": "-75.00"
+            },
+            "item": {
+              "tags": [
+                {
+                  "code": "quote",
+                  "list": [
+                    {
+                      "code": "type",
+                      "value": "order"
+                    }
+                  ]
+                },
+                {
+                  "code": "offer",
+                  "list": [
+                    {
+                      "code": "type",
+                      "value": "combo"
+                    },
+                    {
+                      "code": "additive",
+                      "value": "no"
+                    },
+                    {
+                      "code": "auto",
+                      "value": "no"
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        ],
+        "price": {
+          "currency": "INR",
+          "value": "675.00"
+        },
+        "ttl": "P1D"
+      },
+      "fulfillments": [
+        {
+          "id": "F1",
+          "type": "Delivery",
+          "tracking": true,
+          "state": {
+            "descriptor": {
+              "code": "Order-delivered"
+            }
+          },
+          "@ondc/org/TAT": "P2D",
+          "@ondc/org/provider_name": "mock_provider_name_0",
+          "start": {
+            "location": {
+              "id": "L1",
+              "descriptor": {
+                "name": "ABC Store"
+              },
+              "gps": "19.129076,72.825803",
+              "address": {
+                "building": "my building name or house",
+                "city": "Mumbai",
+                "state": "Maharashtra",
+                "country": "IND",
+                "area_code": "400053",
+                "locality": "my street name",
+                "name": "my house or door or floor"
+              }
+            },
+            "contact": {
+              "phone": "9594663710",
+              "email": "nobody@nomail.com"
+            },
+            "time": {
+              "range": {
+                "start": "2025-06-11T07:25:17.323Z",
+                "end": "2025-06-11T07:35:17.323Z"
+              },
+              "timestamp": "2025-06-11T07:15:17.331Z"
+            }
+          },
+          "end": {
+            "contact": {
+              "email": "nobody@nomail.com",
+              "phone": "9898989898"
+            },
+            "person": {
+              "name": "mock-person"
+            },
+            "location": {
+              "gps": "12.1233,12.9992",
+              "address": {
+                "building": "mock-building",
+                "city": "mock-city",
+                "state": "mock-state",
+                "country": "IND",
+                "area_code": "110092",
+                "locality": "mock-locality",
+                "name": "mock-house-name"
+              }
+            },
+            "time": {
+              "range": {
+                "start": "2025-06-11T07:35:17.323Z",
+                "end": "2025-06-13T07:25:17.323Z"
+              },
+              "timestamp": "2025-06-11T07:15:17.343Z"
+            }
+          },
+          "tags": [
+            {
+              "code": "routing",
+              "list": [
+                {
+                  "code": "type",
+                  "value": "P2P"
+                }
+              ]
+            },
+            {
+              "code": "tracking",
+              "list": [
+                {
+                  "code": "gps_enabled",
+                  "value": "no"
+                },
+                {
+                  "code": "url_enabled",
+                  "value": "yes"
+                },
+                {
+                  "code": "url",
+                  "value": "https://sellerNP.com/ondc/tracking_url"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "Return",
+          "id": "ad392135",
+          "tags": [
+            {
+              "code": "return_request",
+              "list": [
+                {
+                  "code": "id",
+                  "value": "409e4c03-33c8-4abd-9d9b-d213423d0a3b"
+                },
+                {
+                  "code": "item_id",
+                  "value": "I1"
+                },
+                {
+                  "code": "item_quantity",
+                  "value": "1"
+                },
+                {
+                  "code": "reason_id",
+                  "value": "001"
+                },
+                {
+                  "code": "reason_desc",
+                  "value": "the product is damaged"
+                },
+                {
+                  "code": "images",
+                  "value": "https://reference-buyer-app-assets.s3-ap-south-1.amazonaws.com/public-assets/2025-02-10-293522/9d13d0d3-6b21-405e-bfc0-b014485adaa2.png"
+                },
+                {
+                  "code": "ttl_approval",
+                  "value": "PT24H"
+                },
+                {
+                  "code": "ttl_reverseqc",
+                  "value": "P3D"
+                }
+              ]
+            },
+            {
+              "code": "return_request",
+              "list": [
+                {
+                  "code": "id",
+                  "value": "7fcce65e-621e-4b18-ab5a-03f3c416835b"
+                },
+                {
+                  "code": "item_id",
+                  "value": "I3"
+                },
+                {
+                  "code": "item_quantity",
+                  "value": "1"
+                },
+                {
+                  "code": "reason_id",
+                  "value": "001"
+                },
+                {
+                  "code": "reason_desc",
+                  "value": "the product is damaged"
+                },
+                {
+                  "code": "images",
+                  "value": "https://reference-buyer-app-assets.s3-ap-south-1.amazonaws.com/public-assets/2025-02-10-293522/9d13d0d3-6b21-405e-bfc0-b014485adaa2.png"
+                },
+                {
+                  "code": "ttl_approval",
+                  "value": "PT24H"
+                },
+                {
+                  "code": "ttl_reverseqc",
+                  "value": "P3D"
+                }
+              ]
+            },
+            {
+              "code": "return_request",
+              "list": [
+                {
+                  "code": "id",
+                  "value": "0779582b-5417-46ab-8c7b-23f6d7d1a3f1"
+                },
+                {
+                  "code": "item_id",
+                  "value": "I2"
+                },
+                {
+                  "code": "item_quantity",
+                  "value": "1"
+                },
+                {
+                  "code": "reason_id",
+                  "value": "001"
+                },
+                {
+                  "code": "reason_desc",
+                  "value": "the product is damaged"
+                },
+                {
+                  "code": "images",
+                  "value": "https://reference-buyer-app-assets.s3-ap-south-1.amazonaws.com/public-assets/2025-02-10-293522/9d13d0d3-6b21-405e-bfc0-b014485adaa2.png"
+                },
+                {
+                  "code": "ttl_approval",
+                  "value": "PT24H"
+                },
+                {
+                  "code": "ttl_reverseqc",
+                  "value": "P3D"
+                }
+              ]
+            }
+          ],
+          "state": {
+            "descriptor": {
+              "code": "Return_Approved"
+            }
+          },
+          "@ondc/org/provider_name": "mock_lsp_provider",
+          "start": {
+            "location": {
+              "gps": "12.963691,77.577137",
+              "address": {
+                "name": "Vishakh Chandran T",
+                "building": "Building 230",
+                "locality": "KR Market Pedestrian Subway",
+                "city": "Bengaluru",
+                "state": "Karnataka",
+                "country": "IND",
+                "area_code": "560002"
+              }
+            },
+            "time": {
+              "range": {
+                "start": "2025-06-11T07:15:17.351Z",
+                "end": "2025-06-12T07:15:17.351Z"
+              }
+            }
+          },
+          "end": {
+            "location": {
+              "id": "location_15",
+              "descriptor": {
+                "name": "Opencart Store1"
+              },
+              "gps": "12.963500,77.582100",
+              "address": {
+                "locality": "Bengaluru",
+                "city": " Bangalore City",
+                "area_code": "560002",
+                "state": "Karnataka"
+              }
+            },
+            "time": {
+              "range": {
+                "start": "2025-06-12T07:15:17.351Z",
+                "end": "2025-06-13T07:15:17.351Z"
+              }
+            }
+          }
+        }
+      ],
+      "payment": {
+        "params": {
+          "amount": "675.00",
+          "currency": "INR",
+          "transaction_id": "mock_payment_id_123"
+        },
+        "status": "PAID",
+        "type": "ON-ORDER",
+        "collected_by": "BAP",
+        "@ondc/org/buyer_app_finder_fee_type": "percent",
+        "@ondc/org/buyer_app_finder_fee_amount": "3.0",
+        "@ondc/org/settlement_basis": "delivery",
+        "@ondc/org/settlement_window": "P1D",
+        "@ondc/org/withholding_amount": "10.00",
+        "@ondc/org/settlement_details": [
+          {
+            "settlement_counterparty": "seller-app",
+            "settlement_phase": "sale-amount",
+            "settlement_type": "neft",
+            "beneficiary_name": "xxxx",
+            "settlement_bank_account_no": "xxxx",
+            "settlement_ifsc_code": "xxxx",
+            "bank_name": "xxxx",
+            "branch_name": "xxxx"
+          }
+        ]
+      },
+      "created_at": "2025-06-11T07:15:17.320Z",
+      "updated_at": "2025-06-11T07:15:17.351Z"
+    }
+  }
+}

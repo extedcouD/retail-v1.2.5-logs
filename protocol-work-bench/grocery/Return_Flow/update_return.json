@@ -1,0 +1,142 @@
+{
+  "context": {
+    "action": "update",
+    "bap_id": "dev-automation.ondc.org",
+    "bap_uri": "https://dev-automation.ondc.org/buyer",
+    "domain": "ONDC:RET10",
+    "city": "std:011",
+    "country": "IND",
+    "message_id": "f0693cb0-7d0c-4e8e-813d-647a823054bc",
+    "timestamp": "2025-06-11T07:15:17.345Z",
+    "transaction_id": "2231d1fe-eb4e-4de3-85be-14986fef8bb4",
+    "core_version": "1.2.5",
+    "ttl": "PT30S",
+    "bpp_id": "dev-automation.ondc.org",
+    "bpp_uri": "https://dev-automation.ondc.org/seller"
+  },
+  "message": {
+    "update_target": "item",
+    "order": {
+      "id": "581039",
+      "fulfillments": [
+        {
+          "type": "Return",
+          "id": "ad392135",
+          "tags": [
+            {
+              "code": "return_request",
+              "list": [
+                {
+                  "code": "id",
+                  "value": "409e4c03-33c8-4abd-9d9b-d213423d0a3b"
+                },
+                {
+                  "code": "item_id",
+                  "value": "I1"
+                },
+                {
+                  "code": "item_quantity",
+                  "value": "1"
+                },
+                {
+                  "code": "reason_id",
+                  "value": "001"
+                },
+                {
+                  "code": "reason_desc",
+                  "value": "the product is damaged"
+                },
+                {
+                  "code": "images",
+                  "value": "https://reference-buyer-app-assets.s3-ap-south-1.amazonaws.com/public-assets/2025-02-10-293522/9d13d0d3-6b21-405e-bfc0-b014485adaa2.png"
+                },
+                {
+                  "code": "ttl_approval",
+                  "value": "PT24H"
+                },
+                {
+                  "code": "ttl_reverseqc",
+                  "value": "P3D"
+                }
+              ]
+            },
+            {
+              "code": "return_request",
+              "list": [
+                {
+                  "code": "id",
+                  "value": "7fcce65e-621e-4b18-ab5a-03f3c416835b"
+                },
+                {
+                  "code": "item_id",
+                  "value": "I3"
+                },
+                {
+                  "code": "item_quantity",
+                  "value": "1"
+                },
+                {
+                  "code": "reason_id",
+                  "value": "001"
+                },
+                {
+                  "code": "reason_desc",
+                  "value": "the product is damaged"
+                },
+                {
+                  "code": "images",
+                  "value": "https://reference-buyer-app-assets.s3-ap-south-1.amazonaws.com/public-assets/2025-02-10-293522/9d13d0d3-6b21-405e-bfc0-b014485adaa2.png"
+                },
+                {
+                  "code": "ttl_approval",
+                  "value": "PT24H"
+                },
+                {
+                  "code": "ttl_reverseqc",
+                  "value": "P3D"
+                }
+              ]
+            },
+            {
+              "code": "return_request",
+              "list": [
+                {
+                  "code": "id",
+                  "value": "0779582b-5417-46ab-8c7b-23f6d7d1a3f1"
+                },
+                {
+                  "code": "item_id",
+                  "value": "I2"
+                },
+                {
+                  "code": "item_quantity",
+                  "value": "1"
+                },
+                {
+                  "code": "reason_id",
+                  "value": "001"
+                },
+                {
+                  "code": "reason_desc",
+                  "value": "the product is damaged"
+                },
+                {
+                  "code": "images",
+                  "value": "https://reference-buyer-app-assets.s3-ap-south-1.amazonaws.com/public-assets/2025-02-10-293522/9d13d0d3-6b21-405e-bfc0-b014485adaa2.png"
+                },
+                {
+                  "code": "ttl_approval",
+                  "value": "PT24H"
+                },
+                {
+                  "code": "ttl_reverseqc",
+                  "value": "P3D"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

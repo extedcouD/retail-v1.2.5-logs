@@ -1,0 +1,96 @@
+{
+  "context": {
+    "action": "init",
+    "bap_id": "dev-automation.ondc.org",
+    "bap_uri": "https://dev-automation.ondc.org/buyer",
+    "domain": "ONDC:RET10",
+    "city": "std:011",
+    "country": "IND",
+    "message_id": "08af8ac3-1b2c-495b-aa26-1b93f56b5e38",
+    "timestamp": "2025-06-11T07:15:17.428Z",
+    "transaction_id": "6accba3a-457d-479c-bac0-ae75206390ad",
+    "core_version": "1.2.5",
+    "ttl": "PT30S",
+    "bpp_id": "dev-automation.ondc.org",
+    "bpp_uri": "https://dev-automation.ondc.org/seller"
+  },
+  "message": {
+    "order": {
+      "provider": {
+        "id": "P1",
+        "locations": [
+          {
+            "id": "L1"
+          }
+        ]
+      },
+      "items": [
+        {
+          "id": "I1",
+          "fulfillment_id": "F2",
+          "quantity": {
+            "count": 1
+          }
+        },
+        {
+          "id": "I3",
+          "fulfillment_id": "F2",
+          "quantity": {
+            "count": 1
+          }
+        },
+        {
+          "id": "I2",
+          "fulfillment_id": "F2",
+          "quantity": {
+            "count": 1
+          }
+        }
+      ],
+      "billing": {
+        "address": {
+          "building": "my building name or house",
+          "city": "Mumbai",
+          "state": "Maharashtra",
+          "country": "IND",
+          "area_code": "400053",
+          "locality": "my street name",
+          "name": "my house or door or floor"
+        },
+        "phone": "9898989898",
+        "name": "ONDC buyer",
+        "email": "nobody@nomail.com",
+        "created_at": "2025-06-11T07:15:12.429Z",
+        "updated_at": "2025-06-11T07:15:12.429Z"
+      },
+      "fulfillments": [
+        {
+          "id": "F2",
+          "type": "Self-Pickup",
+          "end": {
+            "contact": {
+              "email": "nobody@nomail.com",
+              "phone": "9898989898"
+            }
+          }
+        }
+      ],
+      "offers": [
+        {
+          "id": "combo1",
+          "tags": [
+            {
+              "code": "selection",
+              "list": [
+                {
+                  "code": "apply",
+                  "value": "yes"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

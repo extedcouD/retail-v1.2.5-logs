@@ -1,0 +1,48 @@
+{
+  "context": {
+    "action": "update",
+    "bap_id": "dev-automation.ondc.org",
+    "bap_uri": "https://dev-automation.ondc.org/buyer",
+    "domain": "ONDC:RET10",
+    "city": "std:011",
+    "country": "IND",
+    "message_id": "a6f1ae96-f2cb-4bee-9302-0ddb83382704",
+    "timestamp": "2025-06-11T07:15:17.548Z",
+    "transaction_id": "a6e64025-f733-4367-80ff-dfa7d75a7b89",
+    "core_version": "1.2.5",
+    "ttl": "PT30S",
+    "bpp_id": "dev-automation.ondc.org",
+    "bpp_uri": "https://dev-automation.ondc.org/seller"
+  },
+  "message": {
+    "update_target": "fulfillment",
+    "order": {
+      "id": "154934",
+      "fulfillments": [
+        {
+          "id": "F1",
+          "end": {
+            "location": {
+              "gps": "12.4535,77.9283",
+              "address": {
+                "name": "My new House",
+                "building": "Bldg 7 new ",
+                "locality": "MG Road",
+                "city": "Bengaluru",
+                "state": "Karnataka",
+                "country": "IND",
+                "area_code": "560037"
+              }
+            },
+            "person": {
+              "name": "Buyer 1"
+            },
+            "contact": {
+              "phone": "9886098860"
+            }
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,117 @@
+{
+  "context": {
+    "action": "update",
+    "bap_id": "dev-automation.ondc.org",
+    "bap_uri": "https://dev-automation.ondc.org/buyer",
+    "domain": "ONDC:RET10",
+    "city": "std:011",
+    "country": "IND",
+    "message_id": "d9e34389-061f-4f4a-af8a-82011d0316be",
+    "timestamp": "2025-06-11T07:15:17.513Z",
+    "transaction_id": "e3ba4e99-3ebc-4eb8-9a36-922f8673416d",
+    "core_version": "1.2.5",
+    "ttl": "PT30S",
+    "bpp_id": "dev-automation.ondc.org",
+    "bpp_uri": "https://dev-automation.ondc.org/seller"
+  },
+  "message": {
+    "update_target": "fulfillment",
+    "order": {
+      "id": "704090",
+      "fulfillments": [
+        {
+          "id": "F32822",
+          "tags": [
+            {
+              "code": "update_state",
+              "list": [
+                {
+                  "code": "state",
+                  "value": "Order-picked-up"
+                }
+              ]
+            },
+            {
+              "code": "update_fulfillment_time",
+              "list": [
+                {
+                  "code": "state",
+                  "value": "Order-picked-up"
+                },
+                {
+                  "code": "timestamp",
+                  "value": "2025-06-11T07:15:17.513Z"
+                }
+              ]
+            },
+            {
+              "code": "update_agent_details",
+              "list": [
+                {
+                  "code": "name",
+                  "value": "agent_name"
+                },
+                {
+                  "code": "phone",
+                  "value": "9886098860"
+                }
+              ]
+            },
+            {
+              "code": "bnp_diff_weight",
+              "list": [
+                {
+                  "code": "unit",
+                  "value": "kilogram"
+                },
+                {
+                  "code": "value",
+                  "value": "1.5"
+                }
+              ]
+            },
+            {
+              "code": "bnp_diff_length",
+              "list": [
+                {
+                  "code": "unit",
+                  "value": "centimeter"
+                },
+                {
+                  "code": "value",
+                  "value": "1.5"
+                }
+              ]
+            },
+            {
+              "code": "bnp_diff_breadth",
+              "list": [
+                {
+                  "code": "unit",
+                  "value": "centimeter"
+                },
+                {
+                  "code": "value",
+                  "value": "1.5"
+                }
+              ]
+            },
+            {
+              "code": "bnp_diff_height",
+              "list": [
+                {
+                  "code": "unit",
+                  "value": "centimeter"
+                },
+                {
+                  "code": "value",
+                  "value": "1.5"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

@@ -1,47 +1,20 @@
 {
-  "req": {
-    "context": {
-      "action": "track",
-      "bap_id": "dev-automation.ondc.org",
-      "bap_uri": "http://localhost:7123/api-service/ONDC:RET10/1.2.5/buyer",
-      "domain": "ONDC:RET10",
-      "city": "std:011",
-      "country": "IND",
-      "message_id": "d0937873-9697-477b-b862-c84e67802056",
-      "timestamp": "2025-06-04T10:20:37.554Z",
-      "transaction_id": "0c80b59c-882c-45d0-8078-cd3d79ed95f3",
-      "core_version": "1.2.5",
-      "ttl": "PT30S",
-      "bpp_id": "dev-automation.ondc.org",
-      "bpp_uri": "http://localhost:7123/api-service/ONDC:RET10/1.2.5/seller"
-    },
-    "message": {
-      "order_id": "896609"
-    }
+  "context": {
+    "action": "track",
+    "bap_id": "dev-automation.ondc.org",
+    "bap_uri": "https://dev-automation.ondc.org/buyer",
+    "domain": "ONDC:RET10",
+    "city": "std:011",
+    "country": "IND",
+    "message_id": "b8a94536-0fe8-4d11-9fc3-8e680512b24a",
+    "timestamp": "2025-06-11T07:15:17.110Z",
+    "transaction_id": "fb21fbb2-4a47-4227-9608-fb7d470912b9",
+    "core_version": "1.2.5",
+    "ttl": "PT30S",
+    "bpp_id": "dev-automation.ondc.org",
+    "bpp_uri": "https://dev-automation.ondc.org/seller"
   },
-  "res": {
-    "response": {
-      "message": {
-        "ack": {
-          "status": "ACK"
-        }
-      },
-      "context": {
-        "action": "track",
-        "bap_id": "dev-automation.ondc.org",
-        "bap_uri": "http://localhost:7123/api-service/ONDC:RET10/1.2.5/buyer",
-        "domain": "ONDC:RET10",
-        "city": "std:011",
-        "country": "IND",
-        "message_id": "d0937873-9697-477b-b862-c84e67802056",
-        "timestamp": "2025-06-04T10:20:37.554Z",
-        "transaction_id": "0c80b59c-882c-45d0-8078-cd3d79ed95f3",
-        "core_version": "1.2.5",
-        "ttl": "PT30S",
-        "bpp_id": "dev-automation.ondc.org",
-        "bpp_uri": "http://localhost:7123/api-service/ONDC:RET10/1.2.5/seller"
-      }
-    }
-  },
-  "signature": "no-auth"
+  "message": {
+    "order_id": "377705"
+  }
 }

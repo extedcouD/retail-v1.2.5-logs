@@ -1,51 +1,24 @@
 {
-  "req": {
-    "context": {
-      "action": "on_track",
-      "bap_id": "dev-automation.ondc.org",
-      "bap_uri": "http://localhost:7123/api-service/ONDC:RET10/1.2.5/buyer",
-      "domain": "ONDC:RET10",
-      "city": "std:011",
-      "country": "IND",
-      "message_id": "d0937873-9697-477b-b862-c84e67802056",
-      "timestamp": "2025-06-04T10:20:39.096Z",
-      "transaction_id": "0c80b59c-882c-45d0-8078-cd3d79ed95f3",
-      "core_version": "1.2.5",
-      "ttl": "PT30S",
-      "bpp_id": "dev-automation.ondc.org",
-      "bpp_uri": "http://localhost:7123/api-service/ONDC:RET10/1.2.5/seller"
-    },
-    "message": {
-      "tracking": {
-        "id": "F1",
-        "url": "https://MockNP.com/ondc/tracking_url",
-        "status": "active"
-      }
-    }
+  "context": {
+    "action": "on_track",
+    "bap_id": "dev-automation.ondc.org",
+    "bap_uri": "https://dev-automation.ondc.org/buyer",
+    "domain": "ONDC:RET10",
+    "city": "std:011",
+    "country": "IND",
+    "message_id": "b8a94536-0fe8-4d11-9fc3-8e680512b24a",
+    "timestamp": "2025-06-11T07:15:17.115Z",
+    "transaction_id": "fb21fbb2-4a47-4227-9608-fb7d470912b9",
+    "core_version": "1.2.5",
+    "ttl": "PT30S",
+    "bpp_id": "dev-automation.ondc.org",
+    "bpp_uri": "https://dev-automation.ondc.org/seller"
   },
-  "res": {
-    "response": {
-      "message": {
-        "ack": {
-          "status": "ACK"
-        }
-      },
-      "context": {
-        "action": "on_track",
-        "bap_id": "dev-automation.ondc.org",
-        "bap_uri": "http://localhost:7123/api-service/ONDC:RET10/1.2.5/buyer",
-        "domain": "ONDC:RET10",
-        "city": "std:011",
-        "country": "IND",
-        "message_id": "d0937873-9697-477b-b862-c84e67802056",
-        "timestamp": "2025-06-04T10:20:39.096Z",
-        "transaction_id": "0c80b59c-882c-45d0-8078-cd3d79ed95f3",
-        "core_version": "1.2.5",
-        "ttl": "PT30S",
-        "bpp_id": "dev-automation.ondc.org",
-        "bpp_uri": "http://localhost:7123/api-service/ONDC:RET10/1.2.5/seller"
-      }
+  "message": {
+    "tracking": {
+      "id": "F1",
+      "url": "https://MockNP.com/ondc/tracking_url",
+      "status": "active"
     }
-  },
-  "signature": "Signature keyId=\"dev-automation.ondc.org|27baa06d-d91a-486c-85e5-cc621b787f04|ed25519\",algorithm=\"ed25519\",created=\"1749032439\",expires=\"1749036039\",headers=\"(created) (expires) digest\",signature=\"jsXVmFzvdPLjrj9D3WM5wne6FOjfxYvA5aYuVKVmWA/tB/uVr39BdwB0+0T/NcyGVmSpWXDyWYi8dewFSq/AAw==\""
+  }
 }

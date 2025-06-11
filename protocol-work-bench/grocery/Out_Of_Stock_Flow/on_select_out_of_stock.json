@@ -1,0 +1,168 @@
+{
+  "context": {
+    "action": "on_select",
+    "bap_id": "dev-automation.ondc.org",
+    "bap_uri": "https://dev-automation.ondc.org/buyer",
+    "domain": "ONDC:RET10",
+    "city": "std:011",
+    "country": "IND",
+    "message_id": "d92db364-d571-4503-b98e-9996bb6380fd",
+    "timestamp": "2025-06-11T07:15:17.132Z",
+    "transaction_id": "9264ccc3-16d1-4baa-910d-3cf082097f9e",
+    "core_version": "1.2.5",
+    "ttl": "PT30S",
+    "bpp_id": "dev-automation.ondc.org",
+    "bpp_uri": "https://dev-automation.ondc.org/seller"
+  },
+  "message": {
+    "order": {
+      "provider": {
+        "id": "P1",
+        "locations": [
+          {
+            "id": "L1"
+          }
+        ]
+      },
+      "fulfillments": [
+        {
+          "id": "F1",
+          "type": "Delivery",
+          "@ondc/org/provider_name": "LSP or Provider Name",
+          "tracking": true,
+          "@ondc/org/category": "Immediate Delivery",
+          "@ondc/org/TAT": "PT60M",
+          "state": {
+            "descriptor": {
+              "code": "Serviceable"
+            }
+          }
+        }
+      ],
+      "quote": {
+        "price": {
+          "value": "750.00",
+          "currency": "INR"
+        },
+        "breakup": [
+          {
+            "@ondc/org/item_id": "I3",
+            "@ondc/org/item_quantity": {
+              "count": 1
+            },
+            "title": "Alphanso Mango",
+            "@ondc/org/title_type": "0",
+            "price": {
+              "currency": "INR",
+              "value": "250.00"
+            },
+            "item": {
+              "quantity": {
+                "available": {
+                  "count": "0"
+                },
+                "maximum": {
+                  "count": "0"
+                }
+              },
+              "price": {
+                "currency": "INR",
+                "value": "250.00"
+              }
+            }
+          },
+          {
+            "@ondc/org/item_id": "I3",
+            "@ondc/org/item_quantity": {
+              "count": 1
+            },
+            "title": "Alphanso Mango",
+            "@ondc/org/title_type": "0",
+            "price": {
+              "currency": "INR",
+              "value": "250.00"
+            },
+            "item": {
+              "quantity": {
+                "available": {
+                  "count": "0"
+                },
+                "maximum": {
+                  "count": "0"
+                }
+              },
+              "price": {
+                "currency": "INR",
+                "value": "250.00"
+              }
+            }
+          },
+          {
+            "@ondc/org/item_id": "I3",
+            "@ondc/org/item_quantity": {
+              "count": 1
+            },
+            "title": "Alphanso Mango",
+            "@ondc/org/title_type": "0",
+            "price": {
+              "currency": "INR",
+              "value": "250.00"
+            },
+            "item": {
+              "quantity": {
+                "available": {
+                  "count": "0"
+                },
+                "maximum": {
+                  "count": "0"
+                }
+              },
+              "price": {
+                "currency": "INR",
+                "value": "250.00"
+              }
+            }
+          },
+          {
+            "@ondc/org/item_id": "F1",
+            "title": "Delivery charges",
+            "@ondc/org/title_type": "delivery",
+            "price": {
+              "currency": "INR",
+              "value": "00.00"
+            }
+          },
+          {
+            "@ondc/org/item_id": "F1",
+            "title": "Convenience Fee",
+            "@ondc/org/title_type": "misc",
+            "price": {
+              "currency": "INR",
+              "value": "00.00"
+            }
+          }
+        ],
+        "ttl": "P1D"
+      },
+      "items": [
+        {
+          "id": "I1",
+          "fulfillment_id": "F1"
+        },
+        {
+          "id": "I3",
+          "fulfillment_id": "F1"
+        },
+        {
+          "id": "I2",
+          "fulfillment_id": "F1"
+        }
+      ]
+    }
+  },
+  "error": {
+    "type": "DOMAIN-ERROR",
+    "code": "40002",
+    "message": "Item with id: I3 is out of stock"
+  }
+}

@@ -1,0 +1,256 @@
+{
+  "context": {
+    "action": "on_select",
+    "bap_id": "dev-automation.ondc.org",
+    "bap_uri": "https://dev-automation.ondc.org/buyer",
+    "domain": "ONDC:RET10",
+    "city": "std:011",
+    "country": "IND",
+    "message_id": "45995874-9a97-42a7-ad2b-2f15b3dca0c9",
+    "timestamp": "2025-06-11T07:15:17.486Z",
+    "transaction_id": "e3ba4e99-3ebc-4eb8-9a36-922f8673416d",
+    "core_version": "1.2.5",
+    "ttl": "PT30S",
+    "bpp_id": "dev-automation.ondc.org",
+    "bpp_uri": "https://dev-automation.ondc.org/seller"
+  },
+  "message": {
+    "order": {
+      "provider": {
+        "id": "P1",
+        "locations": [
+          {
+            "id": "L1"
+          }
+        ]
+      },
+      "fulfillments": [
+        {
+          "id": "F32822",
+          "type": "Buyer-Delivery",
+          "@ondc/org/provider_name": "",
+          "tracking": false,
+          "@ondc/org/category": "",
+          "@ondc/org/TAT": "P2D",
+          "state": {
+            "descriptor": {
+              "code": "Serviceable"
+            }
+          },
+          "tags": [
+            {
+              "code": "weight",
+              "list": [
+                {
+                  "code": "unit",
+                  "value": "kilogram"
+                },
+                {
+                  "code": "value",
+                  "value": "1"
+                }
+              ]
+            },
+            {
+              "code": "length",
+              "list": [
+                {
+                  "code": "unit",
+                  "value": "centimeter"
+                },
+                {
+                  "code": "value",
+                  "value": "1"
+                }
+              ]
+            },
+            {
+              "code": "breadth",
+              "list": [
+                {
+                  "code": "unit",
+                  "value": "centimeter"
+                },
+                {
+                  "code": "value",
+                  "value": "1"
+                }
+              ]
+            },
+            {
+              "code": "height",
+              "list": [
+                {
+                  "code": "unit",
+                  "value": "centimeter"
+                },
+                {
+                  "code": "value",
+                  "value": "1"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "quote": {
+        "breakup": [
+          {
+            "@ondc/org/item_id": "I1",
+            "@ondc/org/item_quantity": {
+              "count": 1
+            },
+            "title": "Plain Atta",
+            "@ondc/org/title_type": "item",
+            "price": {
+              "currency": "INR",
+              "value": "200.00"
+            },
+            "item": {
+              "quantity": {
+                "available": {
+                  "count": "99"
+                },
+                "maximum": {
+                  "count": "99"
+                }
+              },
+              "price": {
+                "currency": "INR",
+                "value": "200.00"
+              }
+            }
+          },
+          {
+            "@ondc/org/item_id": "I3",
+            "@ondc/org/item_quantity": {
+              "count": 1
+            },
+            "title": "Alphanso Mango",
+            "@ondc/org/title_type": "item",
+            "price": {
+              "currency": "INR",
+              "value": "250.00"
+            },
+            "item": {
+              "quantity": {
+                "available": {
+                  "count": "99"
+                },
+                "maximum": {
+                  "count": "99"
+                }
+              },
+              "price": {
+                "currency": "INR",
+                "value": "250.00"
+              }
+            }
+          },
+          {
+            "@ondc/org/item_id": "I2",
+            "@ondc/org/item_quantity": {
+              "count": 1
+            },
+            "title": "Plain Atta",
+            "@ondc/org/title_type": "item",
+            "price": {
+              "currency": "INR",
+              "value": "300.00"
+            },
+            "item": {
+              "quantity": {
+                "available": {
+                  "count": "99"
+                },
+                "maximum": {
+                  "count": "99"
+                }
+              },
+              "price": {
+                "currency": "INR",
+                "value": "300.00"
+              }
+            }
+          },
+          {
+            "@ondc/org/item_id": "F1",
+            "title": "Delivery charges",
+            "@ondc/org/title_type": "delivery",
+            "price": {
+              "currency": "INR",
+              "value": "00.00"
+            }
+          },
+          {
+            "@ondc/org/item_id": "F1",
+            "title": "Convenience Fee",
+            "@ondc/org/title_type": "misc",
+            "price": {
+              "currency": "INR",
+              "value": "00.00"
+            }
+          },
+          {
+            "@ondc/org/item_id": "combo1",
+            "title": "Flat discount of ₹75 on combo",
+            "@ondc/org/title_type": "offer",
+            "price": {
+              "currency": "INR",
+              "value": "-75.00"
+            },
+            "item": {
+              "tags": [
+                {
+                  "code": "quote",
+                  "list": [
+                    {
+                      "code": "type",
+                      "value": "order"
+                    }
+                  ]
+                },
+                {
+                  "code": "offer",
+                  "list": [
+                    {
+                      "code": "type",
+                      "value": "combo"
+                    },
+                    {
+                      "code": "additive",
+                      "value": "no"
+                    },
+                    {
+                      "code": "auto",
+                      "value": "no"
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        ],
+        "price": {
+          "currency": "INR",
+          "value": "675.00"
+        },
+        "ttl": "P1D"
+      },
+      "items": [
+        {
+          "id": "I1",
+          "fulfillment_id": "F32822"
+        },
+        {
+          "id": "I3",
+          "fulfillment_id": "F32822"
+        },
+        {
+          "id": "I2",
+          "fulfillment_id": "F32822"
+        }
+      ]
+    }
+  }
+}

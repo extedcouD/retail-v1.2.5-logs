@@ -1,0 +1,108 @@
+{
+  "context": {
+    "action": "init",
+    "bap_id": "dev-automation.ondc.org",
+    "bap_uri": "https://dev-automation.ondc.org/buyer",
+    "domain": "ONDC:RET10",
+    "city": "std:011",
+    "country": "IND",
+    "message_id": "a2e0c696-9462-457a-ba9e-1574c174889c",
+    "timestamp": "2025-06-11T07:15:17.260Z",
+    "transaction_id": "37e12a90-7d56-40bc-8158-479591fedbcb",
+    "core_version": "1.2.5",
+    "ttl": "PT30S",
+    "bpp_id": "dev-automation.ondc.org",
+    "bpp_uri": "https://dev-automation.ondc.org/seller"
+  },
+  "message": {
+    "order": {
+      "provider": {
+        "id": "P1",
+        "locations": [
+          {
+            "id": "L1"
+          }
+        ]
+      },
+      "items": [
+        {
+          "id": "I1",
+          "fulfillment_id": "F1",
+          "quantity": {
+            "count": 1
+          }
+        },
+        {
+          "id": "I3",
+          "fulfillment_id": "F1",
+          "quantity": {
+            "count": 1
+          }
+        },
+        {
+          "id": "I2",
+          "fulfillment_id": "F1",
+          "quantity": {
+            "count": 1
+          }
+        }
+      ],
+      "billing": {
+        "address": {
+          "building": "my building name or house",
+          "city": "Mumbai",
+          "state": "Maharashtra",
+          "country": "IND",
+          "area_code": "400053",
+          "locality": "my street name",
+          "name": "my house or door or floor"
+        },
+        "phone": "9898989898",
+        "name": "ONDC buyer",
+        "email": "nobody@nomail.com",
+        "created_at": "2025-06-11T07:15:12.260Z",
+        "updated_at": "2025-06-11T07:15:12.260Z"
+      },
+      "fulfillments": [
+        {
+          "id": "F1",
+          "type": "Delivery",
+          "end": {
+            "contact": {
+              "email": "nobody@nomail.com",
+              "phone": "9898989898"
+            },
+            "location": {
+              "gps": "12.1233,12.9992",
+              "address": {
+                "building": "mock-building",
+                "city": "mock-city",
+                "state": "mock-state",
+                "country": "IND",
+                "area_code": "110092",
+                "locality": "mock-locality",
+                "name": "mock-house-name"
+              }
+            }
+          }
+        }
+      ],
+      "offers": [
+        {
+          "id": "combo1",
+          "tags": [
+            {
+              "code": "selection",
+              "list": [
+                {
+                  "code": "apply",
+                  "value": "yes"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

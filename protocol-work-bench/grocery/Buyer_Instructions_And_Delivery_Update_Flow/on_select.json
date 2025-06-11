@@ -1,160 +1,202 @@
 {
-  "req": {
-    "context": {
-      "action": "on_select",
-      "bap_id": "dev-automation.ondc.org",
-      "bap_uri": "http://localhost:7123/api-service/ONDC:RET10/1.2.5/buyer",
-      "domain": "ONDC:RET10",
-      "city": "std:011",
-      "country": "IND",
-      "message_id": "4b11d10c-9ecf-4f66-a5f1-4dad7bc5e571",
-      "timestamp": "2025-06-04T11:34:46.310Z",
-      "transaction_id": "b4be9691-ddc2-482d-ac7d-0d20117a7f4c",
-      "core_version": "1.2.5",
-      "ttl": "PT30S",
-      "bpp_id": "dev-automation.ondc.org",
-      "bpp_uri": "http://localhost:7123/api-service/ONDC:RET10/1.2.5/seller"
-    },
-    "message": {
-      "order": {
-        "provider": {
-          "id": "P1",
-          "locations": [
-            {
-              "id": "L1"
-            }
-          ]
-        },
-        "fulfillments": [
+  "context": {
+    "action": "on_select",
+    "bap_id": "dev-automation.ondc.org",
+    "bap_uri": "https://dev-automation.ondc.org/buyer",
+    "domain": "ONDC:RET10",
+    "city": "std:011",
+    "country": "IND",
+    "message_id": "8aac19e6-f925-4966-9bcf-c07f37ae283a",
+    "timestamp": "2025-06-11T07:15:17.521Z",
+    "transaction_id": "a6e64025-f733-4367-80ff-dfa7d75a7b89",
+    "core_version": "1.2.5",
+    "ttl": "PT30S",
+    "bpp_id": "dev-automation.ondc.org",
+    "bpp_uri": "https://dev-automation.ondc.org/seller"
+  },
+  "message": {
+    "order": {
+      "provider": {
+        "id": "P1",
+        "locations": [
           {
-            "id": "F1",
-            "type": "Delivery",
-            "@ondc/org/provider_name": "LSP or Provider Name",
-            "tracking": true,
-            "@ondc/org/category": "Standard Delivery",
-            "@ondc/org/TAT": "P2D",
-            "state": {
-              "descriptor": {
-                "code": "Serviceable"
+            "id": "L1"
+          }
+        ]
+      },
+      "fulfillments": [
+        {
+          "id": "F1",
+          "type": "Delivery",
+          "@ondc/org/provider_name": "LSP or Provider Name",
+          "tracking": true,
+          "@ondc/org/category": "Standard Delivery",
+          "@ondc/org/TAT": "P2D",
+          "state": {
+            "descriptor": {
+              "code": "Serviceable"
+            }
+          }
+        }
+      ],
+      "quote": {
+        "breakup": [
+          {
+            "@ondc/org/item_id": "I1",
+            "@ondc/org/item_quantity": {
+              "count": 1
+            },
+            "title": "Plain Atta",
+            "@ondc/org/title_type": "item",
+            "price": {
+              "currency": "INR",
+              "value": "200.00"
+            },
+            "item": {
+              "quantity": {
+                "available": {
+                  "count": "99"
+                },
+                "maximum": {
+                  "count": "99"
+                }
+              },
+              "price": {
+                "currency": "INR",
+                "value": "200.00"
               }
+            }
+          },
+          {
+            "@ondc/org/item_id": "I3",
+            "@ondc/org/item_quantity": {
+              "count": 1
+            },
+            "title": "Alphanso Mango",
+            "@ondc/org/title_type": "item",
+            "price": {
+              "currency": "INR",
+              "value": "250.00"
+            },
+            "item": {
+              "quantity": {
+                "available": {
+                  "count": "99"
+                },
+                "maximum": {
+                  "count": "99"
+                }
+              },
+              "price": {
+                "currency": "INR",
+                "value": "250.00"
+              }
+            }
+          },
+          {
+            "@ondc/org/item_id": "I2",
+            "@ondc/org/item_quantity": {
+              "count": 1
+            },
+            "title": "Plain Atta",
+            "@ondc/org/title_type": "item",
+            "price": {
+              "currency": "INR",
+              "value": "300.00"
+            },
+            "item": {
+              "quantity": {
+                "available": {
+                  "count": "99"
+                },
+                "maximum": {
+                  "count": "99"
+                }
+              },
+              "price": {
+                "currency": "INR",
+                "value": "300.00"
+              }
+            }
+          },
+          {
+            "@ondc/org/item_id": "F1",
+            "title": "Delivery charges",
+            "@ondc/org/title_type": "delivery",
+            "price": {
+              "currency": "INR",
+              "value": "00.00"
+            }
+          },
+          {
+            "@ondc/org/item_id": "F1",
+            "title": "Convenience Fee",
+            "@ondc/org/title_type": "misc",
+            "price": {
+              "currency": "INR",
+              "value": "00.00"
+            }
+          },
+          {
+            "@ondc/org/item_id": "combo1",
+            "title": "Flat discount of ₹75 on combo",
+            "@ondc/org/title_type": "offer",
+            "price": {
+              "currency": "INR",
+              "value": "-75.00"
+            },
+            "item": {
+              "tags": [
+                {
+                  "code": "quote",
+                  "list": [
+                    {
+                      "code": "type",
+                      "value": "order"
+                    }
+                  ]
+                },
+                {
+                  "code": "offer",
+                  "list": [
+                    {
+                      "code": "type",
+                      "value": "combo"
+                    },
+                    {
+                      "code": "additive",
+                      "value": "no"
+                    },
+                    {
+                      "code": "auto",
+                      "value": "no"
+                    }
+                  ]
+                }
+              ]
             }
           }
         ],
-        "quote": {
-          "breakup": [
-            {
-              "@ondc/org/item_id": "I2",
-              "@ondc/org/item_quantity": {
-                "count": 2
-              },
-              "title": "Plain Atta",
-              "@ondc/org/title_type": "item",
-              "price": {
-                "currency": "INR",
-                "value": "600.00"
-              },
-              "item": {
-                "quantity": {
-                  "available": {
-                    "count": "99"
-                  },
-                  "maximum": {
-                    "count": "99"
-                  }
-                },
-                "price": {
-                  "currency": "INR",
-                  "value": "300.00"
-                }
-              }
-            },
-            {
-              "@ondc/org/item_id": "I3",
-              "@ondc/org/item_quantity": {
-                "count": 5
-              },
-              "title": "Alphanso Mango",
-              "@ondc/org/title_type": "item",
-              "price": {
-                "currency": "INR",
-                "value": "1250.00"
-              },
-              "item": {
-                "quantity": {
-                  "available": {
-                    "count": "99"
-                  },
-                  "maximum": {
-                    "count": "99"
-                  }
-                },
-                "price": {
-                  "currency": "INR",
-                  "value": "250.00"
-                }
-              }
-            },
-            {
-              "@ondc/org/item_id": "F1",
-              "title": "Delivery charges",
-              "@ondc/org/title_type": "delivery",
-              "price": {
-                "currency": "INR",
-                "value": "00.00"
-              }
-            },
-            {
-              "@ondc/org/item_id": "F1",
-              "title": "Convenience Fee",
-              "@ondc/org/title_type": "misc",
-              "price": {
-                "currency": "INR",
-                "value": "00.00"
-              }
-            }
-          ],
-          "price": {
-            "currency": "INR",
-            "value": "1850.00"
-          },
-          "ttl": "P1D"
+        "price": {
+          "currency": "INR",
+          "value": "675.00"
         },
-        "items": [
-          {
-            "id": "I2",
-            "fulfillment_id": "F1"
-          },
-          {
-            "id": "I3",
-            "fulfillment_id": "F1"
-          }
-        ]
-      }
-    }
-  },
-  "res": {
-    "response": {
-      "message": {
-        "ack": {
-          "status": "ACK"
-        }
+        "ttl": "P1D"
       },
-      "context": {
-        "action": "on_select",
-        "bap_id": "dev-automation.ondc.org",
-        "bap_uri": "http://localhost:7123/api-service/ONDC:RET10/1.2.5/buyer",
-        "domain": "ONDC:RET10",
-        "city": "std:011",
-        "country": "IND",
-        "message_id": "4b11d10c-9ecf-4f66-a5f1-4dad7bc5e571",
-        "timestamp": "2025-06-04T11:34:46.310Z",
-        "transaction_id": "b4be9691-ddc2-482d-ac7d-0d20117a7f4c",
-        "core_version": "1.2.5",
-        "ttl": "PT30S",
-        "bpp_id": "dev-automation.ondc.org",
-        "bpp_uri": "http://localhost:7123/api-service/ONDC:RET10/1.2.5/seller"
-      }
+      "items": [
+        {
+          "id": "I1",
+          "fulfillment_id": "F1"
+        },
+        {
+          "id": "I3",
+          "fulfillment_id": "F1"
+        },
+        {
+          "id": "I2",
+          "fulfillment_id": "F1"
+        }
+      ]
     }
-  },
-  "signature": "no-auth"
+  }
 }

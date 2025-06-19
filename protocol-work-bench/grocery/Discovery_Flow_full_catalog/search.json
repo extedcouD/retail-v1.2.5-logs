@@ -6,9 +6,9 @@
     "domain": "ONDC:RET10",
     "city": "std:011",
     "country": "IND",
-    "message_id": "29d08f5a-d293-4138-90ea-7c8da4bcd257",
-    "timestamp": "2025-06-11T07:15:17.042Z",
-    "transaction_id": "d6535900-93b9-41e0-81a7-8818e13e19a0",
+    "message_id": "b28e6938-af05-417d-9002-26b1e3646da9",
+    "timestamp": "2025-06-19T08:47:19.883Z",
+    "transaction_id": "5b2510d5-8511-4563-8e8f-4110a934ebf4",
     "core_version": "1.2.5",
     "ttl": "PT30S"
   },
@@ -40,7 +40,7 @@
           ]
         },
         {
-          "code": "bnp_features",
+          "code": "bap_features",
           "list": [
             {
               "code": "001",

@@ -6,9 +6,9 @@
     "domain": "ONDC:RET10",
     "city": "std:011",
     "country": "IND",
-    "message_id": "df95e50c-9c11-405f-a98b-a015386c433a",
-    "timestamp": "2025-06-11T07:15:17.538Z",
-    "transaction_id": "a6e64025-f733-4367-80ff-dfa7d75a7b89",
+    "message_id": "2154edcd-05ff-4882-a035-25061b0e234b",
+    "timestamp": "2025-06-19T08:47:20.471Z",
+    "transaction_id": "c73494aa-1704-4a9e-ab2b-2fa20c033a04",
     "core_version": "1.2.5",
     "ttl": "PT30S",
     "bpp_id": "dev-automation.ondc.org",
@@ -16,7 +16,7 @@
   },
   "message": {
     "order": {
-      "id": "154934",
+      "id": "865411",
       "state": "Accepted",
       "provider": {
         "id": "P1",
@@ -62,8 +62,8 @@
         "phone": "9898989898",
         "name": "ONDC buyer",
         "email": "nobody@nomail.com",
-        "created_at": "2025-06-11T07:15:12.530Z",
-        "updated_at": "2025-06-11T07:15:12.530Z"
+        "created_at": "2025-06-19T08:47:15.462Z",
+        "updated_at": "2025-06-19T08:47:15.462Z"
       },
       "fulfillments": [
         {
@@ -321,8 +321,8 @@
           ]
         }
       ],
-      "created_at": "2025-06-11T07:15:17.534Z",
-      "updated_at": "2025-06-11T07:15:17.538Z"
+      "created_at": "2025-06-19T08:47:20.467Z",
+      "updated_at": "2025-06-19T08:47:20.471Z"
     }
   }
 }

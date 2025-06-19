@@ -6,9 +6,9 @@
     "domain": "ONDC:RET10",
     "city": "std:011",
     "country": "IND",
-    "message_id": "48209951-756e-482f-9fd2-0548bff81d86",
-    "timestamp": "2025-06-11T07:15:17.289Z",
-    "transaction_id": "37e12a90-7d56-40bc-8158-479591fedbcb",
+    "message_id": "4e0fde9b-b167-4f1d-90b6-4bd9eb4278d5",
+    "timestamp": "2025-06-19T08:47:20.250Z",
+    "transaction_id": "21258592-b04d-4365-abf1-6a6e060554a3",
     "core_version": "1.2.5",
     "ttl": "PT30S",
     "bpp_id": "dev-automation.ondc.org",
@@ -16,7 +16,7 @@
   },
   "message": {
     "order": {
-      "id": "457033",
+      "id": "435797",
       "state": "In-progress",
       "provider": {
         "id": "P1",
@@ -31,7 +31,7 @@
           "id": "I1",
           "fulfillment_id": "F1",
           "quantity": {
-            "count": 0
+            "count": 1
           }
         },
         {
@@ -45,11 +45,11 @@
           "id": "I2",
           "fulfillment_id": "F1",
           "quantity": {
-            "count": 1
+            "count": 0
           }
         },
         {
-          "id": "I1",
+          "id": "I2",
           "fulfillment_id": "part_cancel_id_12391",
           "quantity": {
             "count": 1
@@ -69,8 +69,8 @@
         "phone": "9898989898",
         "name": "ONDC buyer",
         "email": "nobody@nomail.com",
-        "created_at": "2025-06-11T07:15:12.260Z",
-        "updated_at": "2025-06-11T07:15:12.260Z"
+        "created_at": "2025-06-19T08:47:15.226Z",
+        "updated_at": "2025-06-19T08:47:15.226Z"
       },
       "fulfillments": [
         {
@@ -107,8 +107,8 @@
             },
             "time": {
               "range": {
-                "start": "2025-06-11T07:25:17.290Z",
-                "end": "2025-06-11T07:35:17.290Z"
+                "start": "2025-06-19T08:57:20.250Z",
+                "end": "2025-06-19T09:07:20.250Z"
               }
             }
           },
@@ -134,8 +134,8 @@
             },
             "time": {
               "range": {
-                "start": "2025-06-11T07:35:17.290Z",
-                "end": "2025-06-13T07:25:17.290Z"
+                "start": "2025-06-19T09:07:20.250Z",
+                "end": "2025-06-21T08:57:20.250Z"
               }
             }
           },
@@ -145,7 +145,7 @@
               "list": [
                 {
                   "code": "type",
-                  "value": "P2P"
+                  "value": "P2H2P"
                 }
               ]
             },
@@ -199,7 +199,7 @@
                 },
                 {
                   "code": "id",
-                  "value": "I1"
+                  "value": "I2"
                 },
                 {
                   "code": "currency",
@@ -207,7 +207,7 @@
                 },
                 {
                   "code": "value",
-                  "value": "-200.00"
+                  "value": "-300.00"
                 }
               ]
             },
@@ -240,13 +240,13 @@
           {
             "@ondc/org/item_id": "I1",
             "@ondc/org/item_quantity": {
-              "count": 0
+              "count": 1
             },
             "title": "Plain Atta",
             "@ondc/org/title_type": "item",
             "price": {
               "currency": "INR",
-              "value": "0.00"
+              "value": "200.00"
             },
             "item": {
               "quantity": {
@@ -292,13 +292,13 @@
           {
             "@ondc/org/item_id": "I2",
             "@ondc/org/item_quantity": {
-              "count": 1
+              "count": 0
             },
             "title": "Plain Atta",
             "@ondc/org/title_type": "item",
             "price": {
               "currency": "INR",
-              "value": "300.00"
+              "value": "0.00"
             },
             "item": {
               "quantity": {
@@ -375,7 +375,7 @@
         ],
         "price": {
           "currency": "INR",
-          "value": "550.00"
+          "value": "450.00"
         },
         "ttl": "P1D"
       },
@@ -406,8 +406,8 @@
           }
         ]
       },
-      "created_at": "2025-06-11T07:15:17.276Z",
-      "updated_at": "2025-06-11T07:15:17.290Z"
+      "created_at": "2025-06-19T08:47:20.234Z",
+      "updated_at": "2025-06-19T08:47:20.250Z"
     }
   }
 }

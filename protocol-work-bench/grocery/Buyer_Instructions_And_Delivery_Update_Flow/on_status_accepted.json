@@ -6,9 +6,9 @@
     "domain": "ONDC:RET10",
     "city": "std:011",
     "country": "IND",
-    "message_id": "2d9ee9ee-6c85-4efb-991d-165cbd20649f",
-    "timestamp": "2025-06-11T07:15:17.541Z",
-    "transaction_id": "a6e64025-f733-4367-80ff-dfa7d75a7b89",
+    "message_id": "25d4871d-0c7d-43ba-94bf-8baa307f76f5",
+    "timestamp": "2025-06-19T08:47:20.477Z",
+    "transaction_id": "c73494aa-1704-4a9e-ab2b-2fa20c033a04",
     "core_version": "1.2.5",
     "ttl": "PT30S",
     "bpp_id": "dev-automation.ondc.org",
@@ -16,7 +16,7 @@
   },
   "message": {
     "order": {
-      "id": "154934",
+      "id": "865411",
       "state": "Accepted",
       "provider": {
         "id": "P1",
@@ -62,8 +62,8 @@
         "phone": "9898989898",
         "name": "ONDC buyer",
         "email": "nobody@nomail.com",
-        "created_at": "2025-06-11T07:15:12.530Z",
-        "updated_at": "2025-06-11T07:15:12.530Z"
+        "created_at": "2025-06-19T08:47:15.462Z",
+        "updated_at": "2025-06-19T08:47:15.462Z"
       },
       "fulfillments": [
         {
@@ -100,8 +100,8 @@
             },
             "time": {
               "range": {
-                "start": "2025-06-11T07:25:17.541Z",
-                "end": "2025-06-11T07:35:17.541Z"
+                "start": "2025-06-19T08:57:20.479Z",
+                "end": "2025-06-19T09:07:20.479Z"
               }
             }
           },
@@ -127,8 +127,8 @@
             },
             "time": {
               "range": {
-                "start": "2025-06-11T07:35:17.541Z",
-                "end": "2025-06-13T07:25:17.541Z"
+                "start": "2025-06-19T09:07:20.479Z",
+                "end": "2025-06-21T08:57:20.479Z"
               }
             }
           },
@@ -138,7 +138,7 @@
               "list": [
                 {
                   "code": "type",
-                  "value": "P2P"
+                  "value": "P2H2P"
                 }
               ]
             },
@@ -333,8 +333,8 @@
           }
         ]
       },
-      "created_at": "2025-06-11T07:15:17.534Z",
-      "updated_at": "2025-06-11T07:15:17.541Z"
+      "created_at": "2025-06-19T08:47:20.467Z",
+      "updated_at": "2025-06-19T08:47:20.478Z"
     }
   }
 }

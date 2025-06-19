@@ -6,9 +6,9 @@
     "domain": "ONDC:RET10",
     "city": "std:011",
     "country": "IND",
-    "message_id": "08af8ac3-1b2c-495b-aa26-1b93f56b5e38",
-    "timestamp": "2025-06-11T07:15:17.428Z",
-    "transaction_id": "6accba3a-457d-479c-bac0-ae75206390ad",
+    "message_id": "a912ea0e-4fda-469b-ab17-70b1f91b0fcf",
+    "timestamp": "2025-06-19T08:47:20.363Z",
+    "transaction_id": "fe8b14a6-2074-4818-8953-379fe850d025",
     "core_version": "1.2.5",
     "ttl": "PT30S",
     "bpp_id": "dev-automation.ondc.org",
@@ -60,8 +60,8 @@
         "phone": "9898989898",
         "name": "ONDC buyer",
         "email": "nobody@nomail.com",
-        "created_at": "2025-06-11T07:15:12.429Z",
-        "updated_at": "2025-06-11T07:15:12.429Z"
+        "created_at": "2025-06-19T08:47:15.364Z",
+        "updated_at": "2025-06-19T08:47:15.364Z"
       },
       "fulfillments": [
         {

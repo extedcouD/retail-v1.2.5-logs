@@ -6,9 +6,9 @@
     "domain": "ONDC:RET10",
     "city": "*",
     "country": "IND",
-    "message_id": "2e8c157b-de15-450f-8e49-09d03d194fdb",
-    "timestamp": "2025-06-19T08:47:19.903Z",
-    "transaction_id": "6d199c06-f52e-4abf-ae8f-108f832d1c6f",
+    "message_id": "e22ec9fe-2778-42db-b3a6-13fd57dc7f7e",
+    "timestamp": "2025-06-19T08:47:19.917Z",
+    "transaction_id": "b36db019-d018-4dce-bb27-c6d5e71bb470",
     "core_version": "1.2.5",
     "ttl": "PT30S"
   },
@@ -24,7 +24,7 @@
           "list": [
             {
               "code": "mode",
-              "value": "start"
+              "value": "stop"
             }
           ]
         }

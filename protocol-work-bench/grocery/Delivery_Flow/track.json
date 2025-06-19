@@ -6,15 +6,15 @@
     "domain": "ONDC:RET10",
     "city": "std:011",
     "country": "IND",
-    "message_id": "b8a94536-0fe8-4d11-9fc3-8e680512b24a",
-    "timestamp": "2025-06-11T07:15:17.110Z",
-    "transaction_id": "fb21fbb2-4a47-4227-9608-fb7d470912b9",
+    "message_id": "63877aa2-390b-41b7-bec1-f528e4a15340",
+    "timestamp": "2025-06-19T08:47:19.964Z",
+    "transaction_id": "19798971-d7d6-47f4-99c7-0a9600c7aa03",
     "core_version": "1.2.5",
     "ttl": "PT30S",
     "bpp_id": "dev-automation.ondc.org",
     "bpp_uri": "https://dev-automation.ondc.org/seller"
   },
   "message": {
-    "order_id": "377705"
+    "order_id": "436966"
   }
 }

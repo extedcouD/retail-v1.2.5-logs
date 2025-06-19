@@ -6,9 +6,9 @@
     "domain": "ONDC:RET10",
     "city": "std:011",
     "country": "IND",
-    "message_id": "a233b935-8a1c-421e-9887-ef26a5534d6d",
-    "timestamp": "2025-06-11T07:15:17.286Z",
-    "transaction_id": "37e12a90-7d56-40bc-8158-479591fedbcb",
+    "message_id": "a4f78f65-0b70-41d8-8b90-cc284473131b",
+    "timestamp": "2025-06-19T08:47:20.246Z",
+    "transaction_id": "21258592-b04d-4365-abf1-6a6e060554a3",
     "core_version": "1.2.5",
     "ttl": "PT30S",
     "bpp_id": "dev-automation.ondc.org",
@@ -17,7 +17,7 @@
   "message": {
     "update_target": "payment",
     "order": {
-      "id": "457033",
+      "id": "435797",
       "fulfillments": [
         {
           "id": "part_cancel_id_12391",
@@ -30,8 +30,8 @@
             "settlement_counterparty": "buyer",
             "settlement_phase": "refund",
             "settlement_type": "netbanking",
-            "settlement_amount": "125",
-            "settlement_timestamp": "2025-06-11T07:15:17.287Z"
+            "settlement_amount": "225",
+            "settlement_timestamp": "2025-06-19T08:47:20.246Z"
           }
         ]
       }

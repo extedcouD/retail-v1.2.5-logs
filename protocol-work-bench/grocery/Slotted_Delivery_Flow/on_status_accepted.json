@@ -6,9 +6,9 @@
     "domain": "ONDC:RET10",
     "city": "std:011",
     "country": "IND",
-    "message_id": "96914bfa-3912-4db5-95ab-bf22b2e0890d",
-    "timestamp": "2025-06-11T07:15:17.470Z",
-    "transaction_id": "6774b7ce-e2b6-4a7b-916c-058980c9b275",
+    "message_id": "845b7842-be33-4bdc-a372-d78397a10795",
+    "timestamp": "2025-06-19T08:47:20.405Z",
+    "transaction_id": "0f80ffd6-89ef-4cf3-a345-3055ddabb4c2",
     "core_version": "1.2.5",
     "ttl": "PT30S",
     "bpp_id": "dev-automation.ondc.org",
@@ -16,7 +16,7 @@
   },
   "message": {
     "order": {
-      "id": "878980",
+      "id": "927944",
       "state": "Accepted",
       "provider": {
         "id": "P1",
@@ -29,21 +29,21 @@
       "items": [
         {
           "id": "I1",
-          "fulfillment_id": "F2",
+          "fulfillment_id": "F3",
           "quantity": {
             "count": 1
           }
         },
         {
           "id": "I3",
-          "fulfillment_id": "F2",
+          "fulfillment_id": "F3",
           "quantity": {
             "count": 1
           }
         },
         {
           "id": "I2",
-          "fulfillment_id": "F2",
+          "fulfillment_id": "F3",
           "quantity": {
             "count": 1
           }
@@ -62,12 +62,12 @@
         "phone": "9898989898",
         "name": "ONDC buyer",
         "email": "nobody@nomail.com",
-        "created_at": "2025-06-11T07:15:12.458Z",
-        "updated_at": "2025-06-11T07:15:12.458Z"
+        "created_at": "2025-06-19T08:47:15.389Z",
+        "updated_at": "2025-06-19T08:47:15.389Z"
       },
       "fulfillments": [
         {
-          "id": "F2",
+          "id": "F3",
           "type": "Delivery",
           "tracking": true,
           "state": {
@@ -75,7 +75,7 @@
               "code": "Pending"
             }
           },
-          "@ondc/org/TAT": "PT60M",
+          "@ondc/org/TAT": "PT90M",
           "@ondc/org/provider_name": "mock_provider_name_0",
           "start": {
             "location": {
@@ -100,8 +100,8 @@
             },
             "time": {
               "range": {
-                "start": "2025-06-11T07:25:17.471Z",
-                "end": "2025-06-11T07:35:17.471Z"
+                "start": "2025-06-19T08:57:20.405Z",
+                "end": "2025-06-19T09:07:20.405Z"
               }
             }
           },
@@ -127,8 +127,8 @@
             },
             "time": {
               "range": {
-                "start": "2025-06-11T07:35:17.471Z",
-                "end": "2025-06-11T08:25:17.471Z"
+                "start": "2025-06-19T09:07:20.405Z",
+                "end": "2025-06-19T10:27:20.405Z"
               }
             }
           },
@@ -138,7 +138,7 @@
               "list": [
                 {
                   "code": "type",
-                  "value": "P2P"
+                  "value": "P2H2P"
                 }
               ]
             },
@@ -282,7 +282,7 @@
             }
           },
           {
-            "@ondc/org/item_id": "F2",
+            "@ondc/org/item_id": "F3",
             "title": "Delivery charges",
             "@ondc/org/title_type": "delivery",
             "price": {
@@ -291,7 +291,7 @@
             }
           },
           {
-            "@ondc/org/item_id": "F2",
+            "@ondc/org/item_id": "F3",
             "title": "Convenience Fee",
             "@ondc/org/title_type": "misc",
             "price": {
@@ -333,8 +333,8 @@
           }
         ]
       },
-      "created_at": "2025-06-11T07:15:17.465Z",
-      "updated_at": "2025-06-11T07:15:17.471Z"
+      "created_at": "2025-06-19T08:47:20.398Z",
+      "updated_at": "2025-06-19T08:47:20.405Z"
     }
   }
 }

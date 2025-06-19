@@ -6,9 +6,9 @@
     "domain": "ONDC:RET10",
     "city": "std:011",
     "country": "IND",
-    "message_id": "d92db364-d571-4503-b98e-9996bb6380fd",
-    "timestamp": "2025-06-11T07:15:17.132Z",
-    "transaction_id": "9264ccc3-16d1-4baa-910d-3cf082097f9e",
+    "message_id": "c77c6e96-cb01-4f23-ba3e-ce065b397876",
+    "timestamp": "2025-06-19T08:47:20.007Z",
+    "transaction_id": "f686dd09-dd2c-480f-9671-d6768c6d0a6e",
     "core_version": "1.2.5",
     "ttl": "PT30S",
     "bpp_id": "dev-automation.ondc.org",
@@ -163,6 +163,6 @@
   "error": {
     "type": "DOMAIN-ERROR",
     "code": "40002",
-    "message": "Item with id: I3 is out of stock"
+    "message": "{\"item_id\":\"I1\",\"error\":\"40002\"}"
   }
 }

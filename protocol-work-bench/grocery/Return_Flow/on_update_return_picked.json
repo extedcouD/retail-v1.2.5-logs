@@ -6,9 +6,9 @@
     "domain": "ONDC:RET10",
     "city": "std:011",
     "country": "IND",
-    "message_id": "dd25b96f-3a99-4791-9fee-ba395818a8f7",
-    "timestamp": "2025-06-11T07:15:17.353Z",
-    "transaction_id": "2231d1fe-eb4e-4de3-85be-14986fef8bb4",
+    "message_id": "9384b542-c498-4eda-b075-165fc4c0063d",
+    "timestamp": "2025-06-19T08:47:20.310Z",
+    "transaction_id": "109be635-38c1-4aba-afac-3ec913891a09",
     "core_version": "1.2.5",
     "ttl": "PT30S",
     "bpp_id": "dev-automation.ondc.org",
@@ -16,7 +16,7 @@
   },
   "message": {
     "order": {
-      "id": "581039",
+      "id": "599062",
       "state": "Completed",
       "provider": {
         "id": "P1",
@@ -62,8 +62,8 @@
         "phone": "9898989898",
         "name": "ONDC buyer",
         "email": "nobody@nomail.com",
-        "created_at": "2025-06-11T07:15:12.315Z",
-        "updated_at": "2025-06-11T07:15:12.315Z"
+        "created_at": "2025-06-19T08:47:15.281Z",
+        "updated_at": "2025-06-19T08:47:15.281Z"
       },
       "quote": {
         "breakup": [
@@ -244,10 +244,10 @@
             },
             "time": {
               "range": {
-                "start": "2025-06-11T07:25:17.323Z",
-                "end": "2025-06-11T07:35:17.323Z"
+                "start": "2025-06-19T08:57:20.289Z",
+                "end": "2025-06-19T09:07:20.289Z"
               },
-              "timestamp": "2025-06-11T07:15:17.331Z"
+              "timestamp": "2025-06-19T08:47:20.296Z"
             }
           },
           "end": {
@@ -272,10 +272,10 @@
             },
             "time": {
               "range": {
-                "start": "2025-06-11T07:35:17.323Z",
-                "end": "2025-06-13T07:25:17.323Z"
+                "start": "2025-06-19T09:07:20.289Z",
+                "end": "2025-06-21T08:57:20.289Z"
               },
-              "timestamp": "2025-06-11T07:15:17.343Z"
+              "timestamp": "2025-06-19T08:47:20.300Z"
             }
           },
           "tags": [
@@ -284,7 +284,7 @@
               "list": [
                 {
                   "code": "type",
-                  "value": "P2P"
+                  "value": "P2H2P"
                 }
               ]
             },
@@ -316,7 +316,7 @@
               "list": [
                 {
                   "code": "id",
-                  "value": "409e4c03-33c8-4abd-9d9b-d213423d0a3b"
+                  "value": "00043155-0247-47c1-b766-091be4b061e3"
                 },
                 {
                   "code": "item_id",
@@ -353,7 +353,7 @@
               "list": [
                 {
                   "code": "id",
-                  "value": "7fcce65e-621e-4b18-ab5a-03f3c416835b"
+                  "value": "d80d6019-1b5f-42c0-9b42-0db5ce103df3"
                 },
                 {
                   "code": "item_id",
@@ -390,7 +390,7 @@
               "list": [
                 {
                   "code": "id",
-                  "value": "0779582b-5417-46ab-8c7b-23f6d7d1a3f1"
+                  "value": "180c6d92-8804-4846-ba63-28fb7e27c74c"
                 },
                 {
                   "code": "item_id",
@@ -528,10 +528,10 @@
             },
             "time": {
               "range": {
-                "start": "2025-06-11T07:15:17.351Z",
-                "end": "2025-06-12T07:15:17.351Z"
+                "start": "2025-06-19T08:47:20.308Z",
+                "end": "2025-06-20T08:47:20.308Z"
               },
-              "timeStamp": "2025-06-11T07:15:17.354Z"
+              "timeStamp": "2025-06-19T08:47:20.311Z"
             }
           },
           "end": {
@@ -550,8 +550,8 @@
             },
             "time": {
               "range": {
-                "start": "2025-06-12T07:15:17.351Z",
-                "end": "2025-06-13T07:15:17.351Z"
+                "start": "2025-06-20T08:47:20.308Z",
+                "end": "2025-06-21T08:47:20.308Z"
               }
             }
           }
@@ -584,8 +584,8 @@
           }
         ]
       },
-      "created_at": "2025-06-11T07:15:17.320Z",
-      "updated_at": "2025-06-11T07:15:17.354Z"
+      "created_at": "2025-06-19T08:47:20.285Z",
+      "updated_at": "2025-06-19T08:47:20.311Z"
     }
   }
 }

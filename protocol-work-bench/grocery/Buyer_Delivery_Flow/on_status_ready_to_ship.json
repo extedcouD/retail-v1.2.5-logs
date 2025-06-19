@@ -6,9 +6,9 @@
     "domain": "ONDC:RET10",
     "city": "std:011",
     "country": "IND",
-    "message_id": "7ffd19c8-35e8-459b-b3e6-1fa19d3b4ed0",
-    "timestamp": "2025-06-11T07:15:17.511Z",
-    "transaction_id": "e3ba4e99-3ebc-4eb8-9a36-922f8673416d",
+    "message_id": "b894fde7-bf67-4bf0-8ba9-b3cb0693de64",
+    "timestamp": "2025-06-19T08:47:20.446Z",
+    "transaction_id": "eb58ddc1-8cc3-4d96-8b5c-22eac25aec29",
     "core_version": "1.2.5",
     "ttl": "PT30S",
     "bpp_id": "dev-automation.ondc.org",
@@ -61,8 +61,8 @@
         "phone": "9399788618",
         "name": "John Doe",
         "email": "nobody@nomail.com",
-        "created_at": "2025-06-11T07:15:12.490Z",
-        "updated_at": "2025-06-11T07:15:12.490Z"
+        "created_at": "2025-06-19T08:47:15.431Z",
+        "updated_at": "2025-06-19T08:47:15.431Z"
       },
       "fulfillments": [
         {
@@ -312,9 +312,9 @@
           }
         ]
       },
-      "id": "704090",
-      "created_at": "2025-06-11T07:15:17.502Z",
-      "updated_at": "2025-06-11T07:15:17.511Z"
+      "id": "484277",
+      "created_at": "2025-06-19T08:47:20.435Z",
+      "updated_at": "2025-06-19T08:47:20.447Z"
     }
   }
 }

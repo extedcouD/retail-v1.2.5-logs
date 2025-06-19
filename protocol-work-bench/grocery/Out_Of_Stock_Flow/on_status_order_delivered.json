@@ -6,9 +6,9 @@
     "domain": "ONDC:RET10",
     "city": "std:011",
     "country": "IND",
-    "message_id": "2576192c-f313-4bfe-8473-59885124f33b",
-    "timestamp": "2025-06-11T07:15:17.197Z",
-    "transaction_id": "9264ccc3-16d1-4baa-910d-3cf082097f9e",
+    "message_id": "3bdd4cf8-827b-44e0-86a7-a8f265b66129",
+    "timestamp": "2025-06-19T08:47:20.049Z",
+    "transaction_id": "f686dd09-dd2c-480f-9671-d6768c6d0a6e",
     "core_version": "1.2.5",
     "ttl": "PT30S",
     "bpp_id": "dev-automation.ondc.org",
@@ -16,7 +16,7 @@
   },
   "message": {
     "order": {
-      "id": "618052",
+      "id": "356880",
       "state": "Completed",
       "provider": {
         "id": "P1",
@@ -62,8 +62,8 @@
         "phone": "9898989898",
         "name": "ONDC buyer",
         "email": "nobody@nomail.com",
-        "created_at": "2025-06-11T07:15:12.155Z",
-        "updated_at": "2025-06-11T07:15:12.155Z"
+        "created_at": "2025-06-19T08:47:15.018Z",
+        "updated_at": "2025-06-19T08:47:15.018Z"
       },
       "fulfillments": [
         {
@@ -100,10 +100,10 @@
             },
             "time": {
               "range": {
-                "start": "2025-06-11T07:25:17.176Z",
-                "end": "2025-06-11T07:35:17.176Z"
+                "start": "2025-06-19T08:57:20.038Z",
+                "end": "2025-06-19T09:07:20.038Z"
               },
-              "timestamp": "2025-06-11T07:15:17.191Z"
+              "timestamp": "2025-06-19T08:47:20.045Z"
             }
           },
           "end": {
@@ -128,10 +128,10 @@
             },
             "time": {
               "range": {
-                "start": "2025-06-11T07:35:17.176Z",
-                "end": "2025-06-13T07:25:17.176Z"
+                "start": "2025-06-19T09:07:20.038Z",
+                "end": "2025-06-21T08:57:20.038Z"
               },
-              "timestamp": "2025-06-11T07:15:17.197Z"
+              "timestamp": "2025-06-19T08:47:20.050Z"
             }
           },
           "tags": [
@@ -140,7 +140,7 @@
               "list": [
                 {
                   "code": "type",
-                  "value": "P2P"
+                  "value": "P2H2P"
                 }
               ]
             },
@@ -302,8 +302,8 @@
           "label": "Invoice"
         }
       ],
-      "created_at": "2025-06-11T07:15:17.163Z",
-      "updated_at": "2025-06-11T07:15:17.197Z"
+      "created_at": "2025-06-19T08:47:20.026Z",
+      "updated_at": "2025-06-19T08:47:20.049Z"
     }
   }
 }

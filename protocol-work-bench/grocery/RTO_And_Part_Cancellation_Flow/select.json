@@ -6,9 +6,9 @@
     "domain": "ONDC:RET10",
     "city": "std:011",
     "country": "IND",
-    "message_id": "871956e5-ecff-4bfc-908d-f64688484fff",
-    "timestamp": "2025-06-11T07:15:17.249Z",
-    "transaction_id": "4f570593-ab77-4054-b286-ecd031d5e278",
+    "message_id": "b28240da-60d2-45ba-82b8-6938d2f590ae",
+    "timestamp": "2025-06-19T08:47:20.216Z",
+    "transaction_id": "2421a154-f573-40d8-a853-8dbc06ac194c",
     "core_version": "1.2.5",
     "ttl": "PT30S",
     "bpp_id": "dev-automation.ondc.org",
@@ -43,7 +43,8 @@
           "id": "I2",
           "quantity": {
             "count": 1
-          }
+          },
+          "location": "L1"
         }
       ],
       "fulfillments": [

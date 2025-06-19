@@ -6,9 +6,9 @@
     "domain": "ONDC:RET10",
     "city": "std:011",
     "country": "IND",
-    "message_id": "835c6ff3-5d0b-46dc-8b06-e8bbcac380c1",
-    "timestamp": "2025-06-11T07:15:17.583Z",
-    "transaction_id": "4db25d8c-a40c-4658-b4ee-be81457dbecb",
+    "message_id": "1c544e7c-2142-4d8c-8cc8-98b3e5ad54a3",
+    "timestamp": "2025-06-19T08:47:20.542Z",
+    "transaction_id": "6bde15b3-0c12-4e6d-87ac-c5330f731eb8",
     "core_version": "1.2.5",
     "ttl": "PT30S",
     "bpp_id": "dev-automation.ondc.org",
@@ -16,7 +16,7 @@
   },
   "message": {
     "order": {
-      "id": "243573",
+      "id": "846639",
       "state": "Accepted",
       "provider": {
         "id": "P1",
@@ -32,14 +32,14 @@
           "quantity": {
             "count": 1
           },
-          "fulfillment_id": "F3"
+          "fulfillment_id": "F1"
         },
         {
           "id": "I3",
           "quantity": {
             "count": 1
           },
-          "fulfillment_id": "F1"
+          "fulfillment_id": "F2"
         },
         {
           "id": "I2",
@@ -62,12 +62,12 @@
         "phone": "9898989898",
         "name": "ONDC buyer",
         "email": "nobody@nomail.com",
-        "created_at": "2025-06-11T07:15:12.574Z",
-        "updated_at": "2025-06-11T07:15:12.574Z"
+        "created_at": "2025-06-19T08:47:15.528Z",
+        "updated_at": "2025-06-19T08:47:15.528Z"
       },
       "fulfillments": [
         {
-          "id": "F3",
+          "id": "F1",
           "type": "Delivery",
           "tracking": true,
           "state": {
@@ -75,7 +75,7 @@
               "code": "Pending"
             }
           },
-          "@ondc/org/TAT": "P1D",
+          "@ondc/org/TAT": "PT60M",
           "@ondc/org/provider_name": "mock_provider_name_0",
           "start": {
             "location": {
@@ -100,8 +100,8 @@
             },
             "time": {
               "range": {
-                "start": "2025-06-11T07:25:17.583Z",
-                "end": "2025-06-11T07:35:17.583Z"
+                "start": "2025-06-19T08:57:20.542Z",
+                "end": "2025-06-19T09:07:20.542Z"
               }
             }
           },
@@ -127,8 +127,8 @@
             },
             "time": {
               "range": {
-                "start": "2025-06-11T07:35:17.583Z",
-                "end": "2025-06-12T07:25:17.583Z"
+                "start": "2025-06-19T09:07:20.542Z",
+                "end": "2025-06-19T09:57:20.542Z"
               }
             }
           },
@@ -138,7 +138,7 @@
               "list": [
                 {
                   "code": "type",
-                  "value": "P2P"
+                  "value": "P2H2P"
                 }
               ]
             },
@@ -162,7 +162,7 @@
           ]
         },
         {
-          "id": "F1",
+          "id": "F2",
           "type": "Delivery",
           "tracking": true,
           "state": {
@@ -170,7 +170,7 @@
               "code": "Pending"
             }
           },
-          "@ondc/org/TAT": "PT60M",
+          "@ondc/org/TAT": "PT2H",
           "@ondc/org/provider_name": "mock_provider_name_1",
           "start": {
             "location": {
@@ -195,8 +195,8 @@
             },
             "time": {
               "range": {
-                "start": "2025-06-11T07:25:17.583Z",
-                "end": "2025-06-11T07:35:17.583Z"
+                "start": "2025-06-19T08:57:20.542Z",
+                "end": "2025-06-19T09:07:20.542Z"
               }
             }
           },
@@ -222,8 +222,8 @@
             },
             "time": {
               "range": {
-                "start": "2025-06-11T07:35:17.583Z",
-                "end": "2025-06-11T08:25:17.583Z"
+                "start": "2025-06-19T09:07:20.542Z",
+                "end": "2025-06-19T10:57:20.542Z"
               }
             }
           },
@@ -233,7 +233,102 @@
               "list": [
                 {
                   "code": "type",
-                  "value": "P2P"
+                  "value": "P2H2P"
+                }
+              ]
+            },
+            {
+              "code": "tracking",
+              "list": [
+                {
+                  "code": "gps_enabled",
+                  "value": "no"
+                },
+                {
+                  "code": "url_enabled",
+                  "value": "yes"
+                },
+                {
+                  "code": "url",
+                  "value": "https://sellerNP.com/ondc/tracking_url"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "F3",
+          "type": "Delivery",
+          "tracking": true,
+          "state": {
+            "descriptor": {
+              "code": "Pending"
+            }
+          },
+          "@ondc/org/TAT": "P1D",
+          "@ondc/org/provider_name": "mock_provider_name_2",
+          "start": {
+            "location": {
+              "id": "L1",
+              "descriptor": {
+                "name": "ABC Store"
+              },
+              "gps": "19.129076,72.825803",
+              "address": {
+                "building": "my building name or house",
+                "city": "Mumbai",
+                "state": "Maharashtra",
+                "country": "IND",
+                "area_code": "400053",
+                "locality": "my street name",
+                "name": "my house or door or floor"
+              }
+            },
+            "contact": {
+              "phone": "9594663710",
+              "email": "nobody@nomail.com"
+            },
+            "time": {
+              "range": {
+                "start": "2025-06-19T08:57:20.542Z",
+                "end": "2025-06-19T09:07:20.542Z"
+              }
+            }
+          },
+          "end": {
+            "contact": {
+              "email": "nobody@nomail.com",
+              "phone": "9898989898"
+            },
+            "person": {
+              "name": "mock-person"
+            },
+            "location": {
+              "gps": "12.1233,12.9992",
+              "address": {
+                "building": "mock-building",
+                "city": "mock-city",
+                "state": "mock-state",
+                "country": "IND",
+                "area_code": "110092",
+                "locality": "mock-locality",
+                "name": "mock-house-name"
+              }
+            },
+            "time": {
+              "range": {
+                "start": "2025-06-19T09:07:20.542Z",
+                "end": "2025-06-20T08:57:20.542Z"
+              }
+            }
+          },
+          "tags": [
+            {
+              "code": "routing",
+              "list": [
+                {
+                  "code": "type",
+                  "value": "P2H2P"
                 }
               ]
             },
@@ -257,8 +352,189 @@
           ]
         }
       ],
+      "quote": {
+        "breakup": [
+          {
+            "@ondc/org/item_id": "I1",
+            "@ondc/org/item_quantity": {
+              "count": 1
+            },
+            "title": "Plain Atta",
+            "@ondc/org/title_type": "item",
+            "price": {
+              "currency": "INR",
+              "value": "200.00"
+            },
+            "item": {
+              "quantity": {
+                "available": {
+                  "count": "99"
+                },
+                "maximum": {
+                  "count": "99"
+                }
+              },
+              "price": {
+                "currency": "INR",
+                "value": "200.00"
+              }
+            }
+          },
+          {
+            "@ondc/org/item_id": "I3",
+            "@ondc/org/item_quantity": {
+              "count": 1
+            },
+            "title": "Alphanso Mango",
+            "@ondc/org/title_type": "item",
+            "price": {
+              "currency": "INR",
+              "value": "250.00"
+            },
+            "item": {
+              "quantity": {
+                "available": {
+                  "count": "99"
+                },
+                "maximum": {
+                  "count": "99"
+                }
+              },
+              "price": {
+                "currency": "INR",
+                "value": "250.00"
+              }
+            }
+          },
+          {
+            "@ondc/org/item_id": "I2",
+            "@ondc/org/item_quantity": {
+              "count": 1
+            },
+            "title": "Plain Atta",
+            "@ondc/org/title_type": "item",
+            "price": {
+              "currency": "INR",
+              "value": "300.00"
+            },
+            "item": {
+              "quantity": {
+                "available": {
+                  "count": "99"
+                },
+                "maximum": {
+                  "count": "99"
+                }
+              },
+              "price": {
+                "currency": "INR",
+                "value": "300.00"
+              }
+            }
+          },
+          {
+            "@ondc/org/item_id": "F1",
+            "title": "Delivery charges",
+            "@ondc/org/title_type": "delivery",
+            "price": {
+              "currency": "INR",
+              "value": "00.00"
+            }
+          },
+          {
+            "@ondc/org/item_id": "F1",
+            "title": "Convenience Fee",
+            "@ondc/org/title_type": "misc",
+            "price": {
+              "currency": "INR",
+              "value": "00.00"
+            }
+          },
+          {
+            "@ondc/org/item_id": "combo1",
+            "title": "Flat discount of ₹75 on combo",
+            "@ondc/org/title_type": "offer",
+            "price": {
+              "currency": "INR",
+              "value": "-75.00"
+            },
+            "item": {
+              "tags": [
+                {
+                  "code": "quote",
+                  "list": [
+                    {
+                      "code": "type",
+                      "value": "order"
+                    }
+                  ]
+                },
+                {
+                  "code": "offer",
+                  "list": [
+                    {
+                      "code": "type",
+                      "value": "combo"
+                    },
+                    {
+                      "code": "additive",
+                      "value": "no"
+                    },
+                    {
+                      "code": "auto",
+                      "value": "no"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "@ondc/org/item_id": "F2",
+            "title": "Delivery charges",
+            "@ondc/org/title_type": "delivery",
+            "price": {
+              "currency": "INR",
+              "value": "00.00"
+            }
+          },
+          {
+            "@ondc/org/item_id": "F2",
+            "title": "Convenience Fee",
+            "@ondc/org/title_type": "misc",
+            "price": {
+              "currency": "INR",
+              "value": "00.00"
+            }
+          },
+          {
+            "@ondc/org/item_id": "F3",
+            "title": "Delivery charges",
+            "@ondc/org/title_type": "delivery",
+            "price": {
+              "currency": "INR",
+              "value": "00.00"
+            }
+          },
+          {
+            "@ondc/org/item_id": "F3",
+            "title": "Convenience Fee",
+            "@ondc/org/title_type": "misc",
+            "price": {
+              "currency": "INR",
+              "value": "00.00"
+            }
+          }
+        ],
+        "price": {
+          "currency": "INR",
+          "value": "675.00"
+        },
+        "ttl": "P1D"
+      },
       "payment": {
         "params": {
+          "amount": "675.00",
           "currency": "INR",
           "transaction_id": "mock_payment_id_123"
         },
@@ -283,8 +559,8 @@
           }
         ]
       },
-      "created_at": "2025-06-11T07:15:17.579Z",
-      "updated_at": "2025-06-11T07:15:17.583Z"
+      "created_at": "2025-06-19T08:47:20.537Z",
+      "updated_at": "2025-06-19T08:47:20.542Z"
     }
   }
 }

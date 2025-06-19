@@ -6,9 +6,9 @@
     "domain": "ONDC:RET10",
     "city": "std:011",
     "country": "IND",
-    "message_id": "27c0fad3-7a23-4ac7-994d-c1eb5454768a",
-    "timestamp": "2025-06-11T07:15:17.509Z",
-    "transaction_id": "e3ba4e99-3ebc-4eb8-9a36-922f8673416d",
+    "message_id": "a0f897b4-ee23-4c9a-aee2-a343b7e9029d",
+    "timestamp": "2025-06-19T08:47:20.443Z",
+    "transaction_id": "eb58ddc1-8cc3-4d96-8b5c-22eac25aec29",
     "core_version": "1.2.5",
     "ttl": "PT30S",
     "bpp_id": "dev-automation.ondc.org",
@@ -16,7 +16,7 @@
   },
   "message": {
     "order": {
-      "id": "704090",
+      "id": "484277",
       "state": "In-progress",
       "provider": {
         "id": "P1",
@@ -62,8 +62,8 @@
         "phone": "9399788618",
         "name": "John Doe",
         "email": "nobody@nomail.com",
-        "created_at": "2025-06-11T07:15:12.490Z",
-        "updated_at": "2025-06-11T07:15:12.490Z"
+        "created_at": "2025-06-19T08:47:15.431Z",
+        "updated_at": "2025-06-19T08:47:15.431Z"
       },
       "fulfillments": [
         {
@@ -293,8 +293,8 @@
           }
         ]
       },
-      "created_at": "2025-06-11T07:15:17.502Z",
-      "updated_at": "2025-06-11T07:15:17.509Z"
+      "created_at": "2025-06-19T08:47:20.435Z",
+      "updated_at": "2025-06-19T08:47:20.443Z"
     }
   }
 }
